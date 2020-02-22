@@ -189,7 +189,7 @@ header #header-content #user-notifications #new-identifier {
 }
 
 #content #page-content .giftcard-row {
-    width: 96%;
+    width: 97%;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
@@ -208,6 +208,11 @@ header #header-content #user-notifications #new-identifier {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#content #page-content .giftcard-row .giftcard img {
+    width: 95%;
+    height: 95%;
 }
 
 #content #page-content .giftcard-row .giftcard:hover {
