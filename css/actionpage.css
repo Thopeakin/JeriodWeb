@@ -768,6 +768,7 @@ header #header-content #user-notifications #new-identifier {
     }
     #content #first-line .dropdown {
         width: 180px;
+        padding: 5px;
     }
     #content #first-line .button h4 {
         font-size: 14px;

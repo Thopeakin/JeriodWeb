@@ -843,6 +843,10 @@
                     dropdown {
                         width: 130px;
                     }
+                    #content #first-line .dropdown {
+                        width: 180px;
+                        padding: 5px;
+                    }
                     dropdown .dropdown-item {
                         width: 130px;
                     }
