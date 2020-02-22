@@ -322,14 +322,16 @@
                 }
                 
                 #content #balance .right {
-                    width: 240px;
+                    width: 260px;
                     display: flex;
                     justify-content: space-between;
+                    margin-left: 10px;
+                    box-sizing: border-box;
                 }
                 
-                #content #balance .right input[type='button'] {
+                #content #balance .right .fund-button {
                     border: 0.5px solid #C4C4C4;
-                    width: 120px;
+                    width: 130px;
                     font-weight: bold;
                     font-size: 12px;
                     text-align: center;
@@ -341,6 +343,7 @@
                     cursor: pointer;
                     outline-width: 0px;
                     padding: 7px;
+                    display: flex;
                 }
                 
                 #content #open-trades {
@@ -390,7 +393,7 @@
                     justify-content: space-between;
                 }
                 
-                #content #open-trades #open-trades-content #trades-first-line #trades-filter input[type='button'] {
+                #content #open-trades #open-trades-content #trades-first-line #trades-filter .sec-button {
                     border: none;
                     background-color: transparent;
                     font-weight: bold;
@@ -401,6 +404,9 @@
                     color: #060D49;
                     cursor: pointer;
                     outline-width: 0px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                 }
                 
                 #content #open-trades #open-trades-content #trades-first-line #trades-filter .filter-active {
@@ -597,7 +603,7 @@
                 
                 #content #open-trades #notification-sections {
                     margin-top: 30px;
-                    width: 85%;
+                    width: 91%;
                     align-self: center;
                     display: flex;
                     flex-direction: column;
@@ -846,6 +852,7 @@
                     }
                     #content #balance .left h1 {
                         font-size: 25px;
+                        margin-top: -10px;
                     }
                     #content #balance .left h4 {
                         font-size: 9px;
@@ -854,11 +861,11 @@
                         font-size: 10px;
                     }
                     #content #balance .right {
-                        width: 190px;
+                        width: 240px;
                         display: flex;
                         justify-content: space-between;
                     }
-                    #content #balance .right input[type='button'] {
+                    #content #balance .right .fund-button {
                         font-size: 11px;
                         padding: 5px;
                     }
@@ -872,7 +879,7 @@
                     #content #open-trades #open-trades-content #trades-first-line #trades-filter {
                         width: 175px;
                     }
-                    #content #open-trades #open-trades-content #trades-first-line #trades-filter input[type='button'] {
+                    #content #open-trades #open-trades-content #trades-first-line #trades-filter .sec-button {
                         width: 87.5px;
                         font-size: 16px;
                     }
@@ -908,9 +915,9 @@
                         font-size: 13px;
                     }
                     #content #balance .right {
-                        width: 210px;
+                        width: 240px;
                     }
-                    #content #balance .right input[type='button'] {
+                    #content #balance .right .fund-button {
                         font-size: 11px;
                         padding: 5px;
                     }
@@ -921,24 +928,24 @@
                         font-size: 14px;
                     }
                     #content #open-trades #notification-sections .wallet-section price {
-                        font-size: 14px;
+                        font-size: 13px;
                     }
                 }
                 
                 @media (max-width:375px) {
                     #content #open-trades #open-trades-content #trades-first-line h4 {
-                        font-size: 14px;
+                        font-size: 16px;
                         margin-right: 5px;
                     }
                     #content #open-trades #open-trades-content #trades-first-line #trades-filter {
                         width: 150px;
                     }
-                    #content #open-trades #open-trades-content #trades-first-line #trades-filter input[type='button'] {
+                    #content #open-trades #open-trades-content #trades-first-line #trades-filter .sec-button {
                         width: 75px;
                         font-size: 14px;
                     }
                     #content #open-trades #open-trades-content #trades-first-line h4 {
-                        font-size: 14px;
+                        font-size: 16px;
                     }
                 }
                 

@@ -8,10 +8,14 @@ function visibility(element) {
     }
 }
 
-function pinInput(index) {
-    if (index < 3) {
-        document.getElementsByClassName('pin-field')[index + 1].focus();
-    } else if (index == 3) {
-        document.getElementsByClassName('pin-field')[3].blur();
+
+function pinInput(element, index) {
+    element.value = element.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');
+    if (element.value != '') {
+        if (index < 3) {
+            document.getElementsByClassName('pin-field')[index + 1].focus();
+        } else if (index == 3) {
+            document.getElementsByClassName('pin-field')[3].blur();
+        }
     }
 }

@@ -203,11 +203,7 @@ header #header-content #user-notifications #new-identifier {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-#content #page-content .giftcard-row .giftcard img {
-    width: 95%;
-    height: 95%;
+    padding: 20px;
 }
 
 #content #page-content .giftcard-row .giftcard:hover {
@@ -234,6 +230,8 @@ header #header-content #user-notifications #new-identifier {
 #content #page-content #gift-card-form form {
     margin-top: 25px;
     width: 95%;
+    height: 100%;
+    background-color: #FFF;
 }
 
 #content #page-content #gift-card-form form .form-section {
@@ -265,7 +263,6 @@ header #header-content #user-notifications #new-identifier {
 }
 
 #content #page-content #gift-card-form h1 {
-    margin-top: -5px;
     font-weight: bold;
     font-size: 35px;
     line-height: 24px;
@@ -275,7 +272,7 @@ header #header-content #user-notifications #new-identifier {
     color: #060D47;
 }
 
-#content #page-content #gift-card-form input[type='button'] {
+#content #page-content #gift-card-form #pri-button {
     width: 80%;
     height: 55px;
     background-color: #1E50CF;
@@ -287,9 +284,12 @@ header #header-content #user-notifications #new-identifier {
     line-height: 16px;
     color: #FFF;
     opacity: 0.4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#content #page-content #gift-card-form input[type='button']:hover {
+#content #page-content #gift-card-form #pri-button:hover {
     background-color: #3E70EF;
 }
 
@@ -344,7 +344,7 @@ header #header-content #user-notifications #new-identifier {
     justify-content: space-between;
 }
 
-#content #page-content #page-form #first-line #trades-type input[type='button'] {
+#content #page-content #page-form #first-line #trades-type .sec-button {
     border: none;
     background-color: transparent;
     font-weight: bold;
@@ -355,6 +355,9 @@ header #header-content #user-notifications #new-identifier {
     color: #060D49;
     cursor: pointer;
     outline-width: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #content #page-content #page-form #first-line #trades-type .type-active {
@@ -452,6 +455,7 @@ header #header-content #user-notifications #new-identifier {
 #content #page-content #page-form form #share {
     margin-top: 25px;
     width: 500px;
+    height: 100%;
     background: #F7F7F7;
     border-radius: 30px 30px 3px 3px;
     padding-top: 10px;
@@ -480,7 +484,7 @@ header #header-content #user-notifications #new-identifier {
     opacity: 0.7;
 }
 
-#content #page-content #page-form form input[type='button'] {
+#content #page-content #page-form form #pri-button {
     width: 300px;
     height: 55px;
     background-color: #1E50CF;
@@ -493,9 +497,12 @@ header #header-content #user-notifications #new-identifier {
     color: #FFF;
     margin-bottom: 30px;
     opacity: 0.4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#content #page-content #page-form form input[type='button']:hover {
+#content #page-content #page-form form #pri-button:hover {
     background-color: #3E70EF;
 }
 
@@ -726,6 +733,7 @@ header #header-content #user-notifications #new-identifier {
     }
     #content #page-content #page-form form #share {
         width: 90%;
+        height: 100%;
     }
     #content #page-content #gift-card-form form .form-section {
         width: 90%;
@@ -816,7 +824,7 @@ header #header-content #user-notifications #new-identifier {
     #content #page-content #page-form form input[type='number'],
     #content #page-content #page-form form input[type='text'],
     #content #page-content #page-form form .note,
-    #content #page-content #page-form form input[type='button'],
+    #content #page-content #page-form form #pri-button,
     #content #page-content #page-form form #spin-btn,
     #content #page-content #page-form form #success-form,
     #content #page-content #page-form form label {

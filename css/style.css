@@ -142,6 +142,7 @@
                 }
                 
                 #content form .form-group .text-field input[type='text'],
+                #content form .form-group .text-field input[type='email'],
                 #content form .form-group .text-field input[type='password'] {
                     border: none;
                     margin-left: 10px;
@@ -151,12 +152,13 @@
                     font-style: normal;
                     font-weight: 500;
                     font-size: 17px;
+                    padding-left: 5px;
                     line-height: 22px;
                     color: #000000;
                     outline-width: 0px;
                 }
                 
-                #content form .form-group input[type='button'] {
+                #content form .form-group #pri-button {
                     height: 55px;
                     background: #1E50CF;
                     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14);
@@ -169,9 +171,12 @@
                     line-height: 16px;
                     text-align: center;
                     color: #FFFFFF;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                 }
                 
-                #content form .form-group input[type='button']:hover {
+                #content form .form-group #pri-button:hover {
                     background: #2E60dF;
                 }
                 
@@ -253,14 +258,15 @@
                         width: 97%;
                     }
                     #content form .form-group .text-field,
-                    #content form .form-group input[type='button'],
+                    #content form .form-group #pri-button,
                     #content form .form-group label {
                         align-self: center;
                         width: 90%;
                         padding: 0px 5px;
                         margin: 0px;
                     }
-                    #content form .form-group .text-field input[type='text'] {
+                    #content form .form-group .text-field input[type='text'],
+                    #content form .form-group .text-field input[type='email'] {
                         width: 90%;
                         margin: 0px;
                     }
@@ -291,7 +297,8 @@
                 }
                 
                 @media (max-width: 335px) {
-                    #content form .form-group .text-field input[type='text'] {
+                    #content form .form-group .text-field input[type='text'],
+                    #content form .form-group .text-field input[type='email'] {
                         width: 87%;
                         background-color: transparent
                     }

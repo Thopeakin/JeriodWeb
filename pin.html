@@ -22,13 +22,13 @@
             <h5>You will use this PIN to authorize every trasanction</h5>
             <form>
                 <div id='pin-group'>
-                    <input oninput="pinInput(0)" maxlength="1" type='password' class='pin-field'>
-                    <input oninput="pinInput(1)" maxlength="1" type='password' class='pin-field'>
-                    <input oninput="pinInput(2)" maxlength="1" type='password' class='pin-field'>
-                    <input oninput="pinInput(3)" maxlength="1" type='password' class='pin-field'>
+                    <input oninput="pinInput(this, 0)" maxlength="1" type='password' class='pin-field'>
+                    <input oninput="pinInput(this, 1)" maxlength="1" type='password' class='pin-field'>
+                    <input oninput="pinInput(this, 2)" maxlength="1" type='password' class='pin-field'>
+                    <input oninput="pinInput(this, 3)" maxlength="1" type='password' class='pin-field'>
                 </div>
                 <div class='form-group'>
-                    <input onclick='window.location.href="dashboard.html" ;' type='button' value='Finish'>
+                    <div id='pri-button' onclick='window.location.href="dashboard.html";'>Finish</div>
                 </div>
             </form>
         </div>

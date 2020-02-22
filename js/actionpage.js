@@ -19,7 +19,7 @@ function convert() {
     } else {
         document.getElementById('naira-value').innerHTML = "N" + (parseFloat(document.getElementById('btc-value').value) * 3495690).toLocaleString();
     }
-    btn = document.getElementById('ctn-btn');
+    btn = document.getElementById('pri-button');
     if (parseFloat(document.getElementById('btc-value').value) * 3495690 > 0) {
         btn.style.opacity = '1';
         btn.onclick = function() {
@@ -35,7 +35,7 @@ function convert() {
 function verify() {
     bank = document.getElementById('bank').value;
     number = document.getElementById('number').value;
-    btn = document.getElementById('ver-btn');
+    btn = document.getElementById('pri-button');
     spinner = document.getElementById('spin-btn');
     btn.style.display = 'none';
     spinner.style.display = 'flex';
@@ -52,7 +52,7 @@ function verify() {
 
 function accountNumber(element) {
     element.value = element.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');
-    btn = document.getElementById('ver-btn');
+    btn = document.getElementById('pri-button');
     if (element.value.length > 9) {
         btn.style.opacity = '1';
         btn.onclick = function() {
@@ -64,18 +64,21 @@ function accountNumber(element) {
     }
 }
 
-function pinInput(index) {
-    if (index < 3) {
-        document.getElementsByClassName('pin-field')[index + 1].focus();
-    } else if (index == 3) {
-        btn = document.getElementById('add-btn')
-        document.getElementsByClassName('pin-field')[3].blur();
-        btn.style.opacity = '1';
-        btn.onclick = function() {
-            window.location.href = 'addaccountsuccess.html';
-        }
-        btn.focus();
+function pinInput(element, index) {
+    element.value = element.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');
+    if (element.value != '') {
+        if (index < 3) {
+            document.getElementsByClassName('pin-field')[index + 1].focus();
+        } else if (index == 3) {
+            btn = document.getElementById('pri-button')
+            document.getElementsByClassName('pin-field')[3].blur();
+            btn.style.opacity = '1';
+            btn.onclick = function() {
+                window.location.href = 'addaccountsuccess.html';
+            }
+            btn.focus();
 
+        }
     }
 }
 
