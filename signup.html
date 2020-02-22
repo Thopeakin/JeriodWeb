@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeriod</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h2>Logo</h2>
+        <p>Already have an account? <a href=' signin.html'>Sign in</a></p>
+    </header>
+    <div id='bg'>
+        <div id='content' style='margin-bottom: 50px'>
+            <h3>Create an account</h3>
+            <h5>Sign up today. Start trading.</h5>
+            <form>
+                <div class='form-group'>
+                    <label for='name'>Name</label>
+                    <div class='text-field'>
+                        <i class='material-icons'>person</i>
+                        <input type='text' id='name'>
+                    </div>
+                </div>
+                <div class='form-group'>
+                    <label for='mail'>Email</label>
+                    <div class='text-field'>
+                        <i class='material-icons'>mail_outline</i>
+                        <input type='text' id='mail'>
+                    </div>
+                </div>
+                <div class='form-group'>
+                    <label for='phone'>Phone Number</label>
+                    <div class='text-field'>
+                        <i class='material-icons'>call</i>
+                        <input type='text' id='phone'>
+                    </div>
+                </div>
+                <div class='form-group'>
+                    <label for='password'>Password</label>
+                    <div class='text-field'>
+                        <i class='material-icons'>lock_outline</i>
+                        <input type='password' id='password'>
+                    </div>
+                </div>
+                <div class='form-group'>
+                    <label for='cPassword'> Confirm Password</label>
+                    <div class='text-field'>
+                        <i class='material-icons'>lock_outline</i>
+                        <input type='password' id='cPassword'>
+                    </div>
+                </div>
+                <div class='accept-terms'>
+                    <input type='checkbox'>
+                    <p>I accept the <a href='#'>Terms and conditions.</a></p>
+                </div>
+                <div class='form-group'>
+                    <input onclick='window.location.href="pin.html" ;' type='button' value='Create My Account'>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="js/index.js"></script>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeriod</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+    <header>
+        <div id='header-content'>
+            <h2>Logo</h2>
+            <div id='navbar'>
+                <div class='nav-section active'>
+                    <i class='material-icons'>home</i>
+                    <h4>Home</h4>
+                </div>
+                <div onclick="window.location.href ='trades.html';" class='nav-section'>
+                    <i class='material-icons'>assignment</i>
+                    <h4>Trades</h4>
+                </div>
+                <div onclick="window.location.href ='rates.html';" class='nav-section'>
+                    <i class='material-icons'>autorenew</i>
+                    <h4>Rates</h4>
+                </div>
+                <div onclick="window.location.href ='profile.html';" class='nav-section'>
+                    <i class='material-icons'>person</i>
+                    <h4>Profile</h4>
+                </div>
+            </div>
+            <div style="display: flex;align-items: center;">
+                <div id='user-notifications'>
+                    <div id='notifications'>
+                        <p>Hello, Tope</p>
+                        <i onclick='window.location.href="notifications.html";' class='material-icons'>notifications</i>
+                    </div>
+                    <div id='new-identifier'></div>
+                </div>
+                <i class='material-icons' id='menu'>menu</i>
+            </div>
+        </div>
+    </header>
+    <div id='content'>
+        <div id='first-line'>
+            <h3>
+                My Dashboard
+            </h3>
+            <div id='trade-dropdown'>
+                <div onclick="newTrade()" class='button'>
+                    <h4>New Trade</h4>
+                    <h4>+</h4>
+                </div>
+                <dropdown id='dropdown'>
+                    <div onclick='window.location.href="tradegiftcards.html";' class='dropdown-item'>
+                        <h4>Giftcards</h4>
+                        <i style='font-size: 17px; color: #1E50CF;' class="material-icons">arrow_forward</i>
+                    </div>
+                    <divider style="width: 170px; height: 2px; background-color: #000; opacity: 0.1"></divider>
+                    <div onclick='window.location.href="tradebitcoins.html";' class='dropdown-item'>
+                        <h4>Bitcoins</h4>
+                        <i style='font-size: 17px; color: #1E50CF;' class="material-icons">arrow_forward</i>
+                    </div>
+                </dropdown>
+            </div>
+        </div>
+        <div id='balance'>
+            <div class='left'>
+                <h5>WALLET BALANCE</h5>
+                <h1>N27,780</h1>
+                <h4 style="cursor: pointer;" onclick="window.location.href='wallethistory.html';">WALLET HISTORY</h4>
+            </div>
+            <div class='right'>
+                <input type='button' value='WITHDRAW FUNDS'>
+                <input type='button' value='DEPOSIT FUNDS'>
+            </div>
+        </div>
+        <div style='margin-top: 25px;'></div>
+        <div id='open-trades'>
+            <div id='open-trades-content'>
+                <div id='trades-first-line'>
+                    <h4>Open Trades</h4>
+                    <div id='trades-filter'>
+                        <input onclick='tradesFilter(this)' type='button' id='filter-giftcards' class='filter-active' value='Giftcards'>
+                        <input onclick='tradesFilter(this)' type='button' id='filter-bitcoins' value='Bitcoins'>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id='modal'>
+        <div id='modal-content'>
+            <i onclick="closeMenu()" class="material-icons" style="font-size: 30px;color: #fff;margin-top: 15px; margin-right: 25px; align-self: flex-end;cursor: pointer;">close</i>
+            <div class='menu-section active'>
+                <i class='material-icons'>home</i>
+                <h2>Home</h2>
+            </div>
+            <div onclick='window.location.href="trades.html";' class='menu-section'>
+                <i class='material-icons'>assignment</i>
+                <h2>Trades</h2>
+            </div>
+            <div onclick='window.location.href="rates.html";' class='menu-section'>
+                <i class='material-icons'>autorenew</i>
+                <h2>Rates</h2>
+            </div>
+            <div onclick='window.location.href="profile.html";' class='menu-section'>
+                <i class='material-icons'>person</i>
+                <h2>Profile</h2>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/dashboard.js"></script>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeriod</title>
+    <link rel="stylesheet" href="css/actionpage.css">
+</head>
+
+<body>
+    <header>
+        <div id='header-content'>
+            <h2>Logo</h2>
+            <div id='navbar'>
+                <div class='nav-section active'>
+                    <i class='material-icons'>home</i>
+                    <h4>Home</h4>
+                </div>
+                <div onclick="window.location.href ='trades.html';" class='nav-section'>
+                    <i class='material-icons'>assignment</i>
+                    <h4>Trades</h4>
+                </div>
+                <div onclick="window.location.href ='rates.html';" class='nav-section'>
+                    <i class='material-icons'>autorenew</i>
+                    <h4>Rates</h4>
+                </div>
+                <div onclick="window.location.href ='profile.html';" class='nav-section'>
+                    <i class='material-icons'>person</i>
+                    <h4>Profile</h4>
+                </div>
+            </div>
+            <div style="display: flex;align-items: center;">
+                <div id='user-notifications'>
+                    <div id='notifications'>
+                        <p>Hello, Tope</p>
+                        <i onclick='window.location.href="notifications.html";' class='material-icons'>notifications</i>
+                    </div>
+                    <div id='new-identifier'></div>
+                </div>
+                <i class='material-icons' id='menu'>menu</i>
+            </div>
+        </div>
+    </header>
+    <div id='content'>
+        <div id='first-line'>
+            <div id='back-button' onclick='window.history.back();'>
+                <i class='material-icons'>arrow_back</i>
+                <h4>Back</h4>
+            </div>
+            <div id='page-title'>
+                Authorize Account
+            </div>
+        </div>
+        <div id='page-content'>
+            <div id='page-form'>
+                <form>
+                    <div id='bank-row'>
+                        <div class='bank-section'>
+                            <h3>Bank Name</h3>
+                            <h1>GT Bank</h1>
+                        </div>
+                        <div class='bank-section'>
+                            <h3>Accout Number</h3>
+                            <h1>0254507664</h1>
+                        </div>
+                        <div class='bank-section'>
+                            <h3>Account Name</h3>
+                            <h1>Tope Paul</h1>
+                        </div>
+                    </div>
+                    <div id='pin-form'>
+                        <h1>Enter Trasaction Pin</h1>
+                        <h5>Enter your PIN to authorize this account</h5>
+                        <p>Enter PIN</p>
+                        <div id='pin-inputs'>
+                            <input oninput="pinInput(0)" maxlength="1" type='password' class='pin-field'>
+                            <input oninput="pinInput(1)" maxlength="1" type='password' class='pin-field'>
+                            <input oninput="pinInput(2)" maxlength="1" type='password' class='pin-field'>
+                            <input oninput="pinInput(3)" maxlength="1" type='password' class='pin-field'>
+                        </div>
+                    </div>
+                    <input id="add-btn" type='button' value='Add Account Now'>
+
+                </form>
+            </div>
+        </div>
+        <div id='modal'>
+            <div id='modal-content'>
+                <i onclick="closeMenu()" class="material-icons" style="font-size: 30px;color: #fff;margin-top: 15px; margin-right: 25px; align-self: flex-end;cursor: pointer;">close</i>
+                <div onclick='window.location.href="dashboard.html";' class='menu-section active'>
+                    <i class='material-icons'>home</i>
+                    <h2>Home</h2>
+                </div>
+                <div onclick='window.location.href="trades.html";' class='menu-section'>
+                    <i class='material-icons'>assignment</i>
+                    <h2>Trades</h2>
+                </div>
+                <div onclick='window.location.href="rates.html";' class='menu-section'>
+                    <i class='material-icons'>autorenew</i>
+                    <h2>Rates</h2>
+                </div>
+                <div onclick='window.location.href="profile.html";' class='menu-section'>
+                    <i class='material-icons'>person</i>
+                    <h2>Profile</h2>
+                </div>
+            </div>
+        </div>
+</body>
+<script src="js/actionpage.js"></script>
+<script>
+    document.querySelector('.pin-field').focus();
+</script>
+
+</html>

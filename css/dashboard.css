@@ -1,0 +1,1041 @@
+                @font-face {
+                    font-family: "Gilroy";
+                    src: url("../fonts/Gilroy.ttf");
+                }
+                
+                @font-face {
+                    font-family: "Gilroy Light";
+                    src: url("../fonts/Gilroy-Light.otf");
+                }
+                
+                * {
+                    font-family: 'Gilroy', serif;
+                }
+                
+                body {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    width: 100%;
+                    padding: 0px;
+                    margin: 0px;
+                    background-color: #f6f4f1;
+                }
+                
+                header {
+                    height: 56px;
+                    width: 100%;
+                    background: #FFF;
+                    box-shadow: 0px 10px 27px rgba(161, 184, 227, 0.18);
+                    z-index: 1;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    box-sizing: border-box;
+                }
+                
+                header h2 {
+                    font-weight: 800;
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: #222664;
+                }
+                
+                header #header-content {
+                    min-width: 750px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                
+                header #header-content #menu {
+                    display: none;
+                    cursor: pointer;
+                }
+                
+                header #header-content #navbar {
+                    display: flex;
+                    min-width: 400px;
+                    justify-content: space-between;
+                }
+                
+                header #header-content #navbar .nav-section {
+                    display: flex;
+                    min-width: 80px;
+                    height: 53px;
+                    justify-content: space-between;
+                    align-items: center;
+                    cursor: pointer;
+                }
+                
+                header #header-content #navbar .nav-section h4 {
+                    font-size: 16px;
+                    line-height: 19px;
+                    display: flex;
+                    align-items: flex-end;
+                    color: #B6B6B6;
+                }
+                
+                header #header-content #navbar .nav-section i {
+                    color: #DADADA;
+                }
+                
+                header #header-content #navbar .active {
+                    border-bottom: 3px solid #1E50CF;
+                }
+                
+                header #header-content #navbar .active h4 {
+                    color: #1E50CF;
+                }
+                
+                header #header-content #navbar .active i {
+                    color: #1E50CF;
+                }
+                
+                header #header-content #user-notifications {
+                    display: flex;
+                }
+                
+                header #header-content #user-notifications #notifications {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                
+                header #header-content #user-notifications #notifications p {
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #B6B6B6;
+                }
+                
+                header #header-content #user-notifications #notifications i {
+                    width: 35px;
+                    height: 35px;
+                    background-color: #1E50CF;
+                    color: white;
+                    border-radius: 19px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: 10px;
+                    cursor: pointer;
+                }
+                
+                header #header-content #user-notifications #new-identifier {
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 60%;
+                    background-color: #1EB516;
+                    position: relative;
+                    margin-left: -12px;
+                    margin-top: 2px;
+                }
+                
+                #content {
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    align-self: center;
+                }
+                
+                #content #first-line {
+                    display: flex;
+                    height: 100px;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                
+                #content #first-line h3 {
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 28px;
+                    line-height: 24px;
+                    color: #060D47;
+                }
+                
+                #content #first-line .button {
+                    display: flex;
+                    width: 170px;
+                    height: 40px;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 0px 20px;
+                    box-sizing: border-box;
+                    background: #1E50CF;
+                    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14);
+                    border-radius: 4px;
+                    cursor: pointer;
+                }
+                
+                #content #first-line .dropdown {
+                    display: flex;
+                    width: 200px;
+                    height: 40px;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 0px 20px;
+                    box-sizing: border-box;
+                    border: 1px solid #3964D3;
+                    color: #3964D3;
+                    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14);
+                    border-radius: 4px;
+                    cursor: pointer;
+                }
+                
+                #content #first-line .button:hover {
+                    background: #3E70EF;
+                }
+                
+                #content #first-line .button h4 {
+                    font-weight: bold;
+                    font-size: 17px;
+                    line-height: 16px;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    color: #FFFFFF;
+                }
+                
+                dropdown {
+                    position: absolute;
+                    height: 82px;
+                    width: 170px;
+                    z-index: 1;
+                    margin-top: 3px;
+                    background-color: #FFFFFF;
+                    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14);
+                    border-radius: 4px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+                
+                dropdown .dropdown-item {
+                    display: flex;
+                    width: 170px;
+                    height: 40px;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 0px 20px;
+                    cursor: pointer;
+                    box-sizing: border-box;
+                    border-radius: 4px;
+                }
+                
+                dropdown .dropdown-item:hover {
+                    background-color: #EEE;
+                }
+                
+                dropdown .dropdown-item h4 {
+                    font-weight: bolder;
+                    font-family: "Gilroy Light";
+                    font-size: 17px;
+                    line-height: 16px;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    color: #1E50CF;
+                }
+                
+                @keyframes slideIn {
+                    0% {
+                        display: block;
+                        height: 0px;
+                        opacity: 0;
+                    }
+                    100% {
+                        height: 80px;
+                        opacity: 1;
+                    }
+                }
+                
+                @keyframes slideOut {
+                    0% {
+                        height: 80px;
+                        opacity: 1;
+                    }
+                    40% {
+                        opacity: 0;
+                    }
+                    100% {
+                        height: 0px;
+                        opacity: 0;
+                    }
+                }
+                
+                #content #balance {
+                    width: 100%;
+                    height: 170px;
+                    font-weight: bold;
+                    font-size: 17px;
+                    line-height: 16px;
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 0px 7%;
+                    align-items: center;
+                    text-align: center;
+                    color: #FFFFFF;
+                    background: #050D46;
+                    border-radius: 10px;
+                    box-sizing: border-box;
+                }
+                
+                #content #balance .left {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+                    box-sizing: border-box;
+                }
+                
+                #content #balance .left h1 {
+                    font-weight: bold;
+                    font-size: 42px;
+                    line-height: 51px;
+                    text-align: center;
+                    color: #FFFFFF;
+                    margin: 0px;
+                }
+                
+                #content #balance .left h4 {
+                    font-weight: bold;
+                    font-size: 11px;
+                    line-height: 22px;
+                    text-align: center;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: #29FE06;
+                    mix-blend-mode: normal;
+                    margin: 0px;
+                    margin-top: 5px;
+                    cursor: pointer;
+                    opacity: 0.7;
+                }
+                
+                #content #balance .left h5 {
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 22px;
+                    text-align: center;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    mix-blend-mode: normal;
+                    margin: 0px;
+                    opacity: 0.7;
+                }
+                
+                #content #balance .right {
+                    width: 240px;
+                    display: flex;
+                    justify-content: space-between;
+                }
+                
+                #content #balance .right input[type='button'] {
+                    border: 0.5px solid #C4C4C4;
+                    width: 120px;
+                    font-weight: bold;
+                    font-size: 12px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    color: #29FE06;
+                    mix-blend-mode: normal;
+                    opacity: 0.7;
+                    background-color: transparent;
+                    cursor: pointer;
+                    outline-width: 0px;
+                    padding: 7px;
+                }
+                
+                #content #open-trades {
+                    width: 100%;
+                    font-weight: bold;
+                    font-size: 17px;
+                    line-height: 16px;
+                    display: flex;
+                    flex-direction: column;
+                    background: #FFF;
+                    border-radius: 10px;
+                    padding-bottom: 50px;
+                    margin-bottom: 50px;
+                }
+                
+                #content #open-trades #open-trades-content {
+                    margin-top: 20px;
+                    width: 85%;
+                    align-self: center;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                }
+                
+                #content #open-trades #open-trades-content #trades-first-line {
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-bottom: 1px solid #f9f9f9;
+                }
+                
+                #content #open-trades #open-trades-content #trades-first-line h4 {
+                    font-weight: bold;
+                    font-size: 21px;
+                    line-height: 24px;
+                    letter-spacing: -0.2px;
+                    color: #060D47;
+                }
+                
+                #content #open-trades #open-trades-content #trades-first-line #trades-filter {
+                    border: 1px solid rgba(0, 115, 247, 0.16);
+                    border-radius: 30px;
+                    height: 40px;
+                    width: 200px;
+                    display: flex;
+                    justify-content: space-between;
+                }
+                
+                #content #open-trades #open-trades-content #trades-first-line #trades-filter input[type='button'] {
+                    border: none;
+                    background-color: transparent;
+                    font-weight: bold;
+                    font-size: 15px;
+                    line-height: 24px;
+                    width: 100px;
+                    letter-spacing: -0.2px;
+                    color: #060D49;
+                    cursor: pointer;
+                    outline-width: 0px;
+                }
+                
+                #content #open-trades #open-trades-content #trades-first-line #trades-filter .filter-active {
+                    background-color: #060D49 !important;
+                    border-radius: 30px;
+                    color: #FFF !important;
+                }
+                
+                #content #open-trades #open-trades-content .trades-section {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0px 25px;
+                    border-bottom: 1px solid #f9f9f9;
+                }
+                
+                #content #open-trades #open-trades-content .trades-section .left {
+                    display: flex;
+                    align-items: center;
+                }
+                
+                #content #open-trades #open-trades-content .trades-section .left h6 {
+                    font-weight: bold;
+                    font-size: 13px;
+                    line-height: 24px;
+                    color: #050D46;
+                    opacity: 0.34;
+                    margin-right: 30px;
+                }
+                
+                #content #open-trades #open-trades-content .trades-section .left h5 {
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 24px;
+                    height: 25px;
+                    letter-spacing: -0.2px;
+                    color: #060D47;
+                }
+                
+                #content #open-trades #open-trades-content .trades-section h4 {
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 24px;
+                    display: flex;
+                    align-items: center;
+                    text-align: right;
+                    letter-spacing: -0.2px;
+                    color: #060D47;
+                }
+                
+                #content #open-trades #open-trades-content #empty-trades {
+                    margin-top: 45px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    box-sizing: border-box;
+                    padding-bottom: 20px;
+                }
+                
+                #content #open-trades #open-trades-content #empty-trades h4 {
+                    font-weight: bold;
+                    font-size: 20px;
+                    line-height: 24px;
+                    letter-spacing: -0.2px;
+                    color: #060D47;
+                    text-align: center;
+                }
+                
+                #content #open-trades #open-trades-content #trade-types {
+                    border-bottom: 1px solid #f9f9f9;
+                    width: 100%;
+                    height: 40px;
+                    display: none;
+                    justify-content: center;
+                }
+                
+                #content #open-trades #open-trades-content #trade-types .trade-type {
+                    width: 75px;
+                    text-align: center;
+                    margin: 0px 4px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                }
+                
+                #content #open-trades #open-trades-content #trade-types .trade-type p {
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 15px;
+                    line-height: 24px;
+                    letter-spacing: -0.2px;
+                    color: #060D49;
+                    opacity: 0.4;
+                }
+                
+                #content #open-trades #open-trades-content #trade-types .active {
+                    border-bottom: 4px solid #060D49;
+                    opacity: 1;
+                }
+                
+                #content #open-trades #open-trades-content #trade-types .active p {
+                    opacity: 1;
+                }
+                
+                #content #open-trades #open-trades-content #empty-trades h5 {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 20px;
+                    color: #7E7E7E;
+                    margin-top: -20px;
+                    text-align: center;
+                }
+                
+                #content #open-trades #open-trades-content form {
+                    margin-top: 25px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                
+                #content #open-trades #open-trades-content form #giftcard-section {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                
+                #content #open-trades #open-trades-content form #bitcoin-section {
+                    margin-top: 25px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    display: none;
+                }
+                
+                #content #open-trades #open-trades-content form select,
+                #content #open-trades #open-trades-content form input[type='number'] {
+                    width: 300px;
+                    height: 55px;
+                    padding: 0px 15px;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: #000000;
+                    box-sizing: border-box;
+                    opacity: 0.9;
+                    border: 1px solid #C3D3D4;
+                    margin-bottom: 15px;
+                }
+                
+                #content #open-trades #open-trades-content form h3 {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 22px;
+                    text-align: center;
+                    color: #000000;
+                    margin: 0px;
+                }
+                
+                #content #open-trades #open-trades-content form h1 {
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 40px;
+                    line-height: 24px;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    letter-spacing: -0.2px;
+                    color: #060D47;
+                    margin: 15px;
+                }
+                
+                #content #open-trades #open-trades-content form p {
+                    font-family: "Gilroy Light";
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 13px;
+                    line-height: 13px;
+                    text-align: center;
+                    color: #000000;
+                    opacity: 0.4;
+                }
+                
+                #content #open-trades #profile-sections {
+                    margin-top: 30px;
+                    width: 75%;
+                    align-self: center;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                }
+                
+                #content #open-trades #notification-sections {
+                    margin-top: 30px;
+                    width: 85%;
+                    align-self: center;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                }
+                
+                #content #open-trades #profile-sections h2 {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 22px;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: #7E7E7E;
+                }
+                
+                #content #open-trades #profile-sections .profile-section,
+                #content #open-trades #notification-sections .notification-section {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                    border-bottom: 1px solid #E2E2E2;
+                    cursor: pointer;
+                }
+                
+                #content #open-trades #notification-sections .notification-section {
+                    justify-content: space-around;
+                    align-items: flex-start;
+                    margin-top: 15px;
+                    cursor: text;
+                }
+                
+                #content #open-trades #notification-sections .wallet-section {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                    border-bottom: 1px solid #E2E2E2;
+                    cursor: text;
+                    margin-top: 15px;
+                }
+                
+                #content #open-trades #notification-sections .wallet-section h2 {
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 18px;
+                    line-height: 24px;
+                    letter-spacing: -0.2px;
+                    color: #060D47;
+                    margin-left: 15px;
+                    font-family: "Gilroy Light";
+                }
+                
+                #content #open-trades #notification-sections .wallet-section price {
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 24px;
+                    display: flex;
+                    align-items: center;
+                    text-align: right;
+                    letter-spacing: -0.2px;
+                    margin-right: 15px;
+                }
+                
+                #content #open-trades #notification-sections .wallet-section .credit {
+                    color: #1EB516;
+                }
+                
+                #content #open-trades #notification-sections .wallet-section .debit {
+                    color: #FC1616;
+                }
+                
+                #content #open-trades #notification-sections .last,
+                #content #open-trades #wallet-sections .last {
+                    border: none;
+                }
+                
+                #content #open-trades #notification-sections .notification-section .trasnc-success {
+                    min-width: 35px;
+                    min-height: 35px;
+                    border-radius: 50%;
+                    background-color: #D2F0D0;
+                    box-sizing: border-box;
+                    font-size: 18px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #40C039;
+                    margin-right: 15px;
+                }
+                
+                #content #open-trades #notification-sections .notification-section .trasnc-fail {
+                    min-width: 35px;
+                    min-height: 35px;
+                    border-radius: 50%;
+                    background-color: #FFE2D4;
+                    box-sizing: border-box;
+                    font-size: 18px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #FC2121;
+                    margin-right: 15px;
+                }
+                
+                #content #open-trades #notification-sections .notification-section .new-msg {
+                    min-width: 35px;
+                    min-height: 35px;
+                    border-radius: 50%;
+                    background-color: #FFE2D4;
+                    box-sizing: border-box;
+                    font-size: 18px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #FD7028;
+                    margin-right: 15px;
+                }
+                
+                #content #open-trades #notification-sections .notification-section .notification-message {
+                    width: calc(80% - 35px);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    margin-right: 10px;
+                }
+                
+                #content #open-trades #notification-sections .notification-section .notification-message h3 {
+                    margin: 0px;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #000000;
+                }
+                
+                #content #open-trades #notification-sections .notification-section .notification-message p {
+                    font-style: normal;
+                    font-family: "Gilroy Light";
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 22px;
+                    letter-spacing: 0.7px;
+                    color: #7E7E7E;
+                    margin: 5px 0px 10px 0px;
+                }
+                
+                #content #open-trades #notification-sections .notification-section time {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-family: "Gilroy Light";
+                    font-size: 13px;
+                    line-height: 22px;
+                    letter-spacing: 1px;
+                    color: #7E7E7E;
+                    opacity: 0.4;
+                }
+                
+                #content #open-trades #profile-sections .profile-section:hover {
+                    background-color: #EEE;
+                }
+                
+                #content #open-trades #profile-sections .last {
+                    border: none;
+                    margin-bottom: 25px;
+                }
+                
+                #content #open-trades #profile-sections .profile-section p {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #000;
+                }
+                
+                #content #open-trades #profile-sections .profile-section i {
+                    font-size: 16px;
+                    color: #000;
+                }
+                
+                @media (max-width: 1150px) {
+                    header {
+                        padding: 0px calc((100%-750px) /2);
+                    }
+                    #content {
+                        min-width: 650px;
+                    }
+                }
+                
+                @media (max-width: 785px) {
+                    header {
+                        padding: 0px;
+                    }
+                    header #header-content {
+                        min-width: 90%;
+                    }
+                    header #header-content #menu {
+                        display: block;
+                        font-size: 25px;
+                        margin-left: 10px;
+                    }
+                    header #header-content #navbar {
+                        display: none;
+                    }
+                    #content {
+                        min-width: 90%;
+                    }
+                }
+                
+                @media (max-width: 540px) {
+                    #content {
+                        min-width: 90%;
+                    }
+                    #content #first-line {
+                        display: flex;
+                        height: 100px;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+                    #content #first-line h3 {
+                        font-size: 20px;
+                    }
+                    #content #first-line .button {
+                        width: 130px;
+                    }
+                    #content #first-line .dropdown {
+                        width: 150px;
+                    }
+                    #content #first-line .button h4 {
+                        font-size: 14px;
+                        line-height: 13px;
+                    }
+                    dropdown {
+                        width: 130px;
+                    }
+                    dropdown .dropdown-item {
+                        width: 130px;
+                    }
+                    dropdown .dropdown-item h4 {
+                        font-size: 13px;
+                        line-height: 12px;
+                    }
+                    #content #balance .left h1 {
+                        font-size: 25px;
+                    }
+                    #content #balance .left h4 {
+                        font-size: 9px;
+                    }
+                    #content #balance .left h5 {
+                        font-size: 10px;
+                    }
+                    #content #balance .right {
+                        width: 190px;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                    #content #balance .right input[type='button'] {
+                        font-size: 11px;
+                        padding: 5px;
+                    }
+                }
+                
+                @media (max-width: 460px) {
+                    #content #open-trades #open-trades-content #trades-first-line h4 {
+                        font-size: 16px;
+                        margin-right: 5px;
+                    }
+                    #content #open-trades #open-trades-content #trades-first-line #trades-filter {
+                        width: 175px;
+                    }
+                    #content #open-trades #open-trades-content #trades-first-line #trades-filter input[type='button'] {
+                        width: 87.5px;
+                        font-size: 16px;
+                    }
+                    #content #open-trades #open-trades-content .trades-section .left h6 {
+                        margin-right: 10px;
+                    }
+                    #content #open-trades #notification-sections .notification-section .notification-message h3 {
+                        font-size: 13px;
+                    }
+                    #content #open-trades #notification-sections .notification-section .notification-message p {
+                        font-size: 11px;
+                    }
+                    #content #open-trades #notification-sections .notification-section time {
+                        font-size: 11px;
+                    }
+                }
+                
+                @media (max-width: 400px) {
+                    #content #balance {
+                        flex-direction: column;
+                        padding: 3px 0px 10px 0px;
+                    }
+                    #content #balance .left {
+                        align-items: center;
+                    }
+                    #content #balance .left h1 {
+                        font-size: 27px;
+                    }
+                    #content #balance .left h4 {
+                        font-size: 11px;
+                    }
+                    #content #balance .left h5 {
+                        font-size: 13px;
+                    }
+                    #content #balance .right {
+                        width: 210px;
+                    }
+                    #content #balance .right input[type='button'] {
+                        font-size: 11px;
+                        padding: 5px;
+                    }
+                    #content #open-trades #open-trades-content .trades-section {
+                        padding: 0px;
+                    }
+                    #content #open-trades #notification-sections .wallet-section h2 {
+                        font-size: 14px;
+                    }
+                    #content #open-trades #notification-sections .wallet-section price {
+                        font-size: 14px;
+                    }
+                }
+                
+                @media (max-width:375px) {
+                    #content #open-trades #open-trades-content #trades-first-line h4 {
+                        font-size: 14px;
+                        margin-right: 5px;
+                    }
+                    #content #open-trades #open-trades-content #trades-first-line #trades-filter {
+                        width: 150px;
+                    }
+                    #content #open-trades #open-trades-content #trades-first-line #trades-filter input[type='button'] {
+                        width: 75px;
+                        font-size: 14px;
+                    }
+                    #content #open-trades #open-trades-content #trades-first-line h4 {
+                        font-size: 14px;
+                    }
+                }
+                
+                @media (max-width:360px) {
+                    #content #open-trades #open-trades-content #trades-first-line h4 {
+                        font-size: 11px;
+                    }
+                }
+                
+                @media (max-width: 330px) {
+                    #content #first-line h3 {
+                        font-size: 16px;
+                    }
+                    #content #open-trades #notification-sections .wallet-section h2 {
+                        font-size: 12px;
+                    }
+                    #content #open-trades #notification-sections .wallet-section price {
+                        font-size: 12px;
+                    }
+                }
+                
+                #modal {
+                    display: none;
+                    z-index: 1;
+                    background-color: rgba(255, 255, 255, 0.6);
+                    position: fixed;
+                    width: 100%;
+                    height: 100%;
+                    left: 0px;
+                    top: 0px;
+                    animation: modal-fadeIn 0.5s;
+                }
+                
+                #modal #modal-content {
+                    position: fixed;
+                    right: 0px;
+                    width: 75%;
+                    height: 100%;
+                    overflow: auto;
+                    background-color: #060D49;
+                    animation: modal-slideIn 0.5s;
+                    border-left: 1px solid #E5E5E5;
+                    box-sizing: border-box;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding-left: 15px;
+                }
+                
+                @keyframes modal-fadeIn {
+                    from {
+                        opacity: 0;
+                    }
+                    to {
+                        opacity: 1;
+                    }
+                }
+                
+                @keyframes modal-slideIn {
+                    from {
+                        opacity: 0;
+                        right: -75%;
+                    }
+                    to {
+                        opacity: 1;
+                        right: 0;
+                    }
+                }
+                
+                #modal #modal-content .menu-section {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin: 15px 0px 5px 5px;
+                    color: #888;
+                    padding: 0px 10px;
+                    cursor: pointer;
+                }
+                
+                #modal #modal-content .active {
+                    color: #FFF;
+                    border-bottom: 3px solid #FFF;
+                }
+                
+                #modal #modal-content .menu-section h2 {
+                    margin: 3px;
+                    font-size: 22px;
+                }
+                
+                #modal #modal-content .menu-section i {
+                    margin: 3px 10px 3px 3px;
+                    font-size: 20px;
+                }

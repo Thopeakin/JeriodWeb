@@ -1,0 +1,980 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy.ttf");
+}
+
+@font-face {
+    font-family: "Gilroy Light";
+    src: url("../fonts/Gilroy-Light.otf");
+}
+
+* {
+    font-family: 'Gilroy', serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: #f6f4f1;
+}
+
+header {
+    height: 56px;
+    width: 100%;
+    background: #FFF;
+    box-shadow: 0px 10px 27px rgba(161, 184, 227, 0.18);
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+header h2 {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    color: #222664;
+}
+
+header #header-content {
+    min-width: 690px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header #header-content #menu {
+    display: none;
+    cursor: pointer;
+}
+
+header #header-content #navbar {
+    display: flex;
+    min-width: 400px;
+    justify-content: space-between;
+}
+
+header #header-content #navbar .nav-section {
+    display: flex;
+    min-width: 80px;
+    height: 53px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+header #header-content #navbar .nav-section h4 {
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: flex-end;
+    color: #B6B6B6;
+}
+
+header #header-content #navbar .nav-section i {
+    color: #DADADA;
+}
+
+header #header-content #navbar .active {
+    border-bottom: 3px solid #1E50CF;
+}
+
+header #header-content #navbar .active h4 {
+    color: #1E50CF;
+}
+
+header #header-content #navbar .active i {
+    color: #1E50CF;
+}
+
+header #header-content #user-notifications {
+    display: flex;
+}
+
+header #header-content #user-notifications #notifications {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header #header-content #user-notifications #notifications p {
+    font-size: 16px;
+    line-height: 19px;
+    color: #B6B6B6;
+}
+
+header #header-content #user-notifications #notifications i {
+    width: 35px;
+    height: 35px;
+    background-color: #1E50CF;
+    color: white;
+    border-radius: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+header #header-content #user-notifications #new-identifier {
+    width: 15px;
+    height: 15px;
+    border-radius: 60%;
+    background-color: #1EB516;
+    position: relative;
+    margin-left: -12px;
+    margin-top: 2px;
+}
+
+#content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+#content #first-line {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+#content #first-line #back-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#content #first-line #back-button i {
+    color: #B6B6B6;
+    margin-right: 10px;
+}
+
+#content #first-line #back-button h4 {
+    font-size: 15px;
+    line-height: 22px;
+    color: #B6B6B6;
+    mix-blend-mode: normal;
+}
+
+#content #first-line #page-title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #060D47;
+}
+
+#content #page-content {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #FFF;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    padding: 30px 0px;
+}
+
+#content #page-content .giftcard-row {
+    width: 96%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    align-self: center;
+}
+
+#content #page-content .giftcard-row .giftcard {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #ECECEC;
+    box-sizing: border-box;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content #page-content .giftcard-row .giftcard:hover {
+    border: none;
+    box-shadow: 0px 10px 10px rgba(0, 115, 247, 0.1);
+}
+
+#content #page-content #gift-card-form {
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    padding-bottom: 25px;
+}
+
+#content #page-content #gift-card-form img {
+    margin-bottom: 15px;
+}
+
+#content #page-content #gift-card-form form {
+    margin-top: 25px;
+    width: 95%;
+}
+
+#content #page-content #gift-card-form form .form-section {
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    align-self: center;
+}
+
+#content #page-content #gift-card-form form .form-section select {
+    width: 45%;
+    height: 55px;
+    padding: 0px 15px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    margin-bottom: 20px;
+    opacity: 0.9;
+    border: 1px solid #C3D3D4;
+}
+
+#content #page-content #gift-card-form h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+}
+
+#content #page-content #gift-card-form h1 {
+    margin-top: -5px;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.2px;
+    color: #060D47;
+}
+
+#content #page-content #gift-card-form input[type='button'] {
+    width: 80%;
+    height: 55px;
+    background-color: #1E50CF;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFF;
+    opacity: 0.4;
+}
+
+#content #page-content #gift-card-form input[type='button']:hover {
+    background-color: #3E70EF;
+}
+
+#content #page-content #gift-card-form .note {
+    width: 335px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #000000;
+    opacity: 0.4;
+}
+
+#content #page-content #page-form {
+    width: 100%;
+    height: 100%;
+    margin-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#content #page-content #page-form #first-line {
+    height: 70px;
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    align-self: center;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#content #page-content #page-form #first-line h4 {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #060D47;
+}
+
+#content #page-content #page-form #first-line #trades-type {
+    border: 1px solid rgba(0, 115, 247, 0.16);
+    border-radius: 30px;
+    height: 40px;
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#content #page-content #page-form #first-line #trades-type input[type='button'] {
+    border: none;
+    background-color: transparent;
+    font-family: "Gilroy Light";
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 24px;
+    width: 110px;
+    letter-spacing: -0.2px;
+    color: #060D49;
+    cursor: pointer;
+    outline-width: 0px;
+}
+
+#content #page-content #page-form #first-line #trades-type .type-active {
+    background-color: #060D49 !important;
+    border-radius: 30px;
+    color: #FFF !important;
+}
+
+#content #page-content #page-form form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+#content #page-content #page-form form select,
+#content #page-content #page-form form input[type='number'] {
+    width: 300px;
+    height: 55px;
+    padding: 0px 15px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    box-sizing: border-box;
+    opacity: 0.9;
+    border: 1px solid #C3D3D4;
+}
+
+#content #page-content #page-form form input[type='text'] {
+    width: 300px;
+    height: 55px;
+    padding: 0px 15px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    box-sizing: border-box;
+    opacity: 0.9;
+    border: 1px solid #C3D3D4;
+    margin: 20px 0px;
+}
+
+#content #page-content #page-form form input[type='number'] {
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 22px;
+    color: #000000;
+}
+
+#content #page-content #page-form form label {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 22px;
+    color: #000000;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    align-self: start;
+    width: 300px;
+    align-self: center;
+}
+
+#content #page-content #page-form form h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    margin-top: 25px;
+}
+
+#content #page-content #page-form form h1 {
+    margin-top: -10px;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.2px;
+    color: #060D47;
+}
+
+#content #page-content #page-form form .note {
+    width: 335px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #000000;
+    opacity: 0.4;
+}
+
+#content #page-content #page-form form #share {
+    margin-top: 25px;
+    width: 500px;
+    background: #F7F7F7;
+    border-radius: 30px 30px 3px 3px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#content #page-content #page-form form .info {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+    opacity: 0.7;
+}
+
+#content #page-content #page-form form .address {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+    opacity: 0.7;
+}
+
+#content #page-content #page-form form input[type='button'] {
+    width: 300px;
+    height: 55px;
+    background-color: #1E50CF;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFF;
+    margin-bottom: 30px;
+    opacity: 0.4;
+}
+
+#content #page-content #page-form form input[type='button']:hover {
+    background-color: #3E70EF;
+}
+
+#content #page-content #page-form form #spin-btn {
+    width: 300px;
+    height: 55px;
+    background-color: #1E50CF;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFF;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+#content #page-content #page-form form #spin-btn #spin {
+    animation: 1s linear infinite spinner;
+    border: solid 4px #FFFFFF;
+    border-bottom-color: #1E50CF;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotateZ(-360deg)
+    }
+    100% {
+        transform: rotateZ(0deg)
+    }
+}
+
+#content #page-content #page-form #con-acc {
+    display: none;
+}
+
+#content #page-content #page-form form .bank-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#content #page-content #page-form form #details-row {
+    display: flex;
+    margin: 20px 0px 30px 0px;
+}
+
+#content #page-content #page-form form .bank-section h4 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+    margin: 5px 0px;
+}
+
+#content #page-content #page-form form .bank-section h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-family: "Gilroy Light";
+    font-size: 25px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+    margin: 5px 0px 5px 0px;
+}
+
+#content #page-content #page-form form #bank-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-self: center;
+    margin-top: 15px;
+}
+
+#content #page-content #page-form form #bank-row h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #000000;
+    opacity: 0.2;
+}
+
+#content #page-content #page-form form #bank-row h1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+}
+
+#content #page-content #page-form form #pin-form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#content #page-content #page-form form #pin-form h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #060D47;
+    text-align: center;
+    margin: 0px;
+}
+
+#content #page-content #page-form form #pin-form h5 {
+    font-style: normal;
+    font-weight: 500;
+    font-family: "Gilroy Light";
+    font-size: 15px;
+    line-height: 20px;
+    color: #7E7E7E;
+    text-align: center;
+    margin: 3px 0px 0px 0px;
+}
+
+#content #page-content #page-form form #pin-form p {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 24px;
+    font-family: "Gilroy Light";
+    letter-spacing: -0.2px;
+    color: #060D47;
+    opacity: 0.3;
+    padding-top: 15px
+}
+
+#content #page-content #page-form form #pin-form #pin-inputs {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#content #page-content #page-form form #pin-form .pin-field {
+    width: 60px;
+    height: 50px;
+    border: 1px solid #C3D3D4;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 30px;
+}
+
+#content #page-content #page-form form #success-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+#content #page-content #page-form form #success-form #success-icon {
+    margin: 20px 0px;
+    width: 75px;
+    height: 75px;
+    background-color: #1EB516;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+#content #page-content #page-form form #success-form #success-icon i {
+    color: #fff;
+    font-size: 35px;
+}
+
+#content #page-content #page-form form #success-form h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.2px;
+    color: #060D47;
+}
+
+#content #page-content #page-form form #success-form p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    color: #7E7E7E;
+    margin-bottom: 35px;
+}
+
+@media (max-width: 1150px) {
+    header {
+        padding: 0px calc((100%-750px) /2);
+    }
+    #content {
+        min-width: 90%;
+    }
+}
+
+@media (max-width: 785px) {
+    header {
+        padding: 0px;
+    }
+    header #header-content {
+        min-width: 90%;
+    }
+    header #header-content #menu {
+        display: block;
+        font-size: 25px;
+        margin-left: 10px;
+    }
+    header #header-content #navbar {
+        display: none;
+    }
+    #content {
+        min-width: 90%;
+    }
+    #content #page-content #page-form form #share {
+        width: 90%;
+    }
+    #content #page-content #gift-card-form form .form-section {
+        width: 90%;
+    }
+}
+
+@media (max-width:630px) {
+    #content #page-content .giftcard-row .giftcard {
+        width: 25vw;
+        height: 25vw;
+        border-radius: 20px;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+}
+
+@media( max-width:575px) {
+    #content #page-content #gift-card-form form .form-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    #content #page-content #gift-card-form form .form-section select {
+        width: 100%;
+    }
+}
+
+@media (max-width: 540px) {
+    #content {
+        min-width: 90%;
+    }
+    #content #first-line h3 {
+        font-size: 20px;
+    }
+    #content #first-line .button {
+        width: 130px;
+    }
+    #content #first-line .dropdown {
+        width: 180px;
+    }
+    #content #first-line .button h4 {
+        font-size: 14px;
+        line-height: 13px;
+    }
+    dropdown {
+        width: 130px;
+    }
+    dropdown .dropdown-item {
+        width: 130px;
+    }
+    dropdown .dropdown-item h4 {
+        font-size: 13px;
+        line-height: 12px;
+    }
+    #content #balance .left h1 {
+        font-size: 25px;
+    }
+    #content #balance .left h4 {
+        font-size: 9px;
+    }
+    #content #balance .left h5 {
+        font-size: 10px;
+    }
+    #content #balance .right {
+        width: 190px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #content #balance .right input[type='button'] {
+        font-size: 11px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 460px) {
+    #content #page-content #page-form #first-line h4 {
+        font-size: 16px;
+        margin-right: 5px;
+    }
+    #content #page-content #page-form #first-line #trades-type {
+        width: 180px;
+    }
+    #content #page-content #page-form #first-line #trades-type input[type='button'] {
+        width: 90px;
+        font-size: 13px;
+    }
+    #content #page-content #page-form form select,
+    #content #page-content #page-form form input[type='number'],
+    #content #page-content #page-form form input[type='text'],
+    #content #page-content #page-form form .note,
+    #content #page-content #page-form form input[type='button'],
+    #content #page-content #page-form form #spin-btn,
+    #content #page-content #page-form form #success-form,
+    #content #page-content #page-form form label {
+        width: 80%;
+    }
+    #content #page-content #page-form form #success-form h2 {
+        font-size: 18px;
+    }
+    #content #page-content #page-form form #success-form p {
+        font-size: 14px;
+    }
+    #content #page-content #page-form form #confirm-btn {
+        width: calc(100vw * 0.85);
+    }
+    #content #page-content #page-form form .address p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 400px) {
+    #content #balance {
+        flex-direction: column;
+        padding: 3px 0px 10px 0px;
+    }
+    #content #balance .left {
+        align-items: center;
+    }
+    #content #balance .left h1 {
+        font-size: 27px;
+    }
+    #content #balance .left h4 {
+        font-size: 11px;
+    }
+    #content #balance .left h5 {
+        font-size: 13px;
+    }
+    #content #balance .right {
+        width: 210px;
+    }
+    #content #balance .right input[type='button'] {
+        font-size: 11px;
+        padding: 5px;
+    }
+    #content #open-trades #open-trades-content .trades-section {
+        padding: 0px;
+    }
+    #content #page-content #gift-card-form .note {
+        width: 80%;
+    }
+    #content #page-content #page-form form .bank-section h2 {
+        font-size: 16px;
+    }
+    #content #page-content #page-form form #bank-row h1 {
+        font-size: 13px;
+    }
+    #content #page-content #page-form form #bank-row h3 {
+        font-size: 11px;
+    }
+    #content #page-content #page-form form #pin-form .pin-field {
+        width: 50px;
+        height: 40px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width:375px) {
+    #content #page-content #page-form #first-line h4 {
+        font-size: 13px;
+        margin-right: 5px;
+    }
+    #content #page-content #page-form #first-line #trades-type {
+        width: 170px;
+    }
+    #content #page-content #page-form #first-line #trades-type input[type='button'] {
+        width: 85px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 330px) {
+    #content #first-line h3 {
+        font-size: 16px;
+    }
+}
+
+#modal {
+    display: none;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.6);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    animation: modal-fadeIn 0.5s;
+}
+
+#modal #modal-content {
+    position: fixed;
+    right: 0px;
+    width: 75%;
+    height: 100%;
+    overflow: auto;
+    background-color: #060D49;
+    animation: modal-slideIn 0.5s;
+    border-left: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 15px;
+}
+
+@keyframes modal-fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes modal-slideIn {
+    from {
+        opacity: 0;
+        right: -75%;
+    }
+    to {
+        opacity: 1;
+        right: 0;
+    }
+}
+
+#modal #modal-content .menu-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 15px 0px 5px 5px;
+    color: #888;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
+#modal #modal-content .active {
+    color: #FFF;
+    border-bottom: 3px solid #FFF;
+}
+
+#modal #modal-content .menu-section h2 {
+    margin: 3px;
+    font-size: 22px;
+}
+
+#modal #modal-content .menu-section i {
+    margin: 3px 10px 3px 3px;
+    font-size: 20px;
+}

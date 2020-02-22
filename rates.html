@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeriod</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body>
+    <header>
+        <div id='header-content'>
+            <h2>Logo</h2>
+            <div id='navbar'>
+                <div onclick="window.location.href ='dashboard.html';" class='nav-section'>
+                    <i class='material-icons'>home</i>
+                    <h4>Home</h4>
+                </div>
+                <div onclick="window.location.href ='trades.html';" class='nav-section'>
+                    <i class='material-icons'>assignment</i>
+                    <h4>Trades</h4>
+                </div>
+                <div onclick="window.location.href ='rates.html';" class='nav-section active'>
+                    <i class='material-icons'>autorenew</i>
+                    <h4>Rates</h4>
+                </div>
+                <div onclick="window.location.href ='profile.html';" class='nav-section'>
+                    <i class='material-icons'>person</i>
+                    <h4>Profile</h4>
+                </div>
+            </div>
+            <div style="display: flex;align-items: center;">
+                <div id='user-notifications'>
+                    <div id='notifications'>
+                        <p>Hello, Tope</p>
+                        <i onclick='window.location.href="notifications.html";' class='material-icons'>notifications</i>
+                    </div>
+                    <div id='new-identifier'></div>
+                </div>
+                <i class='material-icons' id='menu'>menu</i>
+            </div>
+        </div>
+    </header>
+    <div id='content'>
+        <div id='first-line'>
+            <h3>
+                Our Rates
+            </h3>
+        </div>
+        <div id='open-trades'>
+            <div id='open-trades-content'>
+                <div style='justify-content: center;' id='trades-first-line'>
+                    <div style='margin-bottom: 20px;' id='trades-filter'>
+                        <input onclick='tradesFilter(this)' type='button' id='filter-giftcards' class='filter-active' value='Giftcards'>
+                        <input onclick='tradesFilter(this)' type='button' id='filter-bitcoins' value='Bitcoins'>
+                    </div>
+                </div>
+                <div id='trade-types'>
+                    <div onclick='BTCTradeType(this)' id='buy' class='trade-type active'>
+                        <P>BUY</P>
+                    </div>
+                    <div onclick='BTCTradeType(this)' id='sell' class='trade-type'>
+                        <P>SELL</P>
+                    </div>
+                </div>
+                <form>
+                    <div id='giftcard-section'>
+                        <select>
+                            <option>Select: Amazon Giftcard ($)</option>
+                            <option>Select: Apple Giftcard ($)</option>
+                            <option>Select: Walmart Giftcard ($)</option>
+                            <option>Select: BestBuy Giftcard ($)</option>
+                            <option>Select: Starbucks Giftcard ($)</option>
+                        </select>
+                        <input oninput="convertGift(this)" type='number' min="0" step="0.01" placeholder="Amount">
+                        <h3>Amount to receive</h3>
+                        <h1 id='gift-naira-value'>N0</h1>
+                        <p>Note: This is an estimated rate. Actual rate may differ</p>
+                    </div>
+                    <div id='bitcoin-section'>
+                        <select>
+                            <option>Select Wallet Type</option>
+                        </select>
+                        <input oninput="convertBTC(this)" id='amount-input' type='number' min="0" step="0.01" placeholder="Amount">
+                        <h3>Amount to receive</h3>
+                        <h1 id='btc-naira-value'>N0</h1>
+                        <p>Note: This is an estimated rate. Actual rate may differ</p>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id='modal'>
+        <div id='modal-content'>
+            <i onclick="closeMenu()" class="material-icons" style="font-size: 30px;color: #fff;margin-top: 15px; margin-right: 25px; align-self: flex-end;cursor: pointer;">close</i>
+            <div onclick='window.location.href="dashboard.html";' class='menu-section'>
+                <i class='material-icons'>home</i>
+                <h2>Home</h2>
+            </div>
+            <div onclick='window.location.href="trades.html";' class='menu-section'>
+                <i class='material-icons'>assignment</i>
+                <h2>Trades</h2>
+            </div>
+            <div class='menu-section active'>
+                <i class='material-icons'>autorenew</i>
+                <h2>Rates</h2>
+            </div>
+            <div onclick='window.location.href="profile.html";' class='menu-section'>
+                <i class='material-icons'>person</i>
+                <h2>Profile</h2>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/dashboard.js"></script>
+
+</html>
