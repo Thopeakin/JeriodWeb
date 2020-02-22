@@ -3,11 +3,6 @@
                     src: url("../fonts/Gilroy.ttf");
                 }
                 
-                @font-face {
-                    font-family: "Gilroy Light";
-                    src: url("../fonts/Gilroy-Light.otf");
-                }
-                
                 * {
                     font-family: 'Gilroy', serif;
                 }
@@ -230,7 +225,6 @@
                 
                 dropdown .dropdown-item h4 {
                     font-weight: bolder;
-                    font-family: "Gilroy Light";
                     font-size: 17px;
                     line-height: 16px;
                     display: flex;
@@ -583,7 +577,6 @@
                 }
                 
                 #content #open-trades #open-trades-content form p {
-                    font-family: "Gilroy Light";
                     font-style: normal;
                     font-weight: 500;
                     font-size: 13px;
@@ -613,7 +606,7 @@
                 
                 #content #open-trades #profile-sections h2 {
                     font-style: normal;
-                    font-weight: 500;
+                    font-weight: 600;
                     font-size: 12px;
                     line-height: 22px;
                     letter-spacing: 1px;
@@ -656,7 +649,6 @@
                     letter-spacing: -0.2px;
                     color: #060D47;
                     margin-left: 15px;
-                    font-family: "Gilroy Light";
                 }
                 
                 #content #open-trades #notification-sections .wallet-section price {
@@ -746,7 +738,6 @@
                 
                 #content #open-trades #notification-sections .notification-section .notification-message p {
                     font-style: normal;
-                    font-family: "Gilroy Light";
                     font-weight: 500;
                     font-size: 14px;
                     line-height: 22px;
@@ -758,7 +749,6 @@
                 #content #open-trades #notification-sections .notification-section time {
                     font-style: normal;
                     font-weight: 500;
-                    font-family: "Gilroy Light";
                     font-size: 13px;
                     line-height: 22px;
                     letter-spacing: 1px;
@@ -777,7 +767,7 @@
                 
                 #content #open-trades #profile-sections .profile-section p {
                     font-style: normal;
-                    font-weight: 500;
+                    font-weight: 600;
                     font-size: 16px;
                     line-height: 19px;
                     color: #000;
