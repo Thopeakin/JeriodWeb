@@ -3,13 +3,8 @@
                     src: url("../fonts/Gilroy.ttf");
                 }
                 
-                @font-face {
-                    font-family: "Gilroy Light";
-                    src: url("../fonts/Gilroy-Light.otf");
-                }
-                
                 * {
-                    font-family: 'Gilroy', serif;
+                    font-family: 'Gilroy', sans-serif
                 }
                 
                 body {
