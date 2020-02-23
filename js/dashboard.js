@@ -153,9 +153,9 @@ function toggleSwitch(element) {
         element.className = 'active';
         element.style.animation = 'toggle-active 0.3s';
         window.setTimeout(function() {
-            element.style.backgroundColor = 'green';
-            element.style.borderColor = 'green';
-            document.getElementById('switch-button').style.borderColor = 'green';
+            element.style.backgroundColor = '#1E50CF';
+            element.style.borderColor = '#1E50CF';
+            document.getElementById('switch-button').style.borderColor = '#1E50CF';
             document.getElementById('switch-button').style.marginLeft = '0px';
             document.getElementById('switch-button').style.marginRight = '-2px';
             element.style.paddingLeft = '23px';
