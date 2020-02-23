@@ -601,6 +601,47 @@
                     justify-content: flex-start;
                 }
                 
+                #content #open-trades #profile-sections .profile-section #switch-container {
+                    margin: 0px;
+                    padding: 0px;
+                    width: 55px;
+                    height: 30px;
+                    background-color: #FFF;
+                    border: 2px solid #AAA;
+                    border-radius: 18px;
+                    display: flex;
+                    align-items: center;
+                    box-sizing: border-box;
+                }
+                
+                #content #open-trades #profile-sections .profile-section #switch-button {
+                    width: 30px;
+                    height: 30px;
+                    background-color: white;
+                    border: 2px solid #AAA;
+                    border-radius: 50%;
+                    margin-left: -2px;
+                    box-sizing: border-box;
+                }
+                
+                @keyframes toggle-active {
+                    from {
+                        padding-left: 0px;
+                    }
+                    to {
+                        padding-left: 23px;
+                    }
+                }
+                
+                @keyframes toggle-inactive {
+                    from {
+                        padding-left: 23px;
+                    }
+                    to {
+                        padding-left: 0px;
+                    }
+                }
+                
                 #content #open-trades #notification-sections {
                     margin-top: 30px;
                     width: 91%;

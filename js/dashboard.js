@@ -148,6 +148,32 @@ function BTCTradeType(element) {
     convertBTC(document.getElementById('amount-input'));
 }
 
+function toggleSwitch(element) {
+    if (element.className == 'inactive') {
+        element.className = 'active';
+        element.style.animation = 'toggle-active 0.3s';
+        window.setTimeout(function() {
+            element.style.backgroundColor = 'green';
+            element.style.borderColor = 'green';
+            document.getElementById('switch-button').style.borderColor = 'green';
+            document.getElementById('switch-button').style.marginLeft = '0px';
+            document.getElementById('switch-button').style.marginRight = '-2px';
+            element.style.paddingLeft = '23px';
+        }, 260)
+    } else {
+        element.className = 'inactive';
+        element.style.animation = 'toggle-inactive 0.3s';
+        window.setTimeout(function() {
+            element.style.backgroundColor = 'white';
+            element.style.borderColor = '#AAA';
+            document.getElementById('switch-button').style.borderColor = '#AAA';
+            document.getElementById('switch-button').style.marginLeft = '-2px';
+            document.getElementById('switch-button').style.marginRight = '0px';
+            element.style.paddingLeft = '0px';
+        }, 250)
+    }
+}
+
 menuBtn = document.getElementById('menu');
 menuBtn.onclick = function() {
     openMenu();
