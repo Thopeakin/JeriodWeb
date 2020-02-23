@@ -232,7 +232,7 @@ header #header-content #user-notifications #new-identifier {
     margin-top: 25px;
     width: 95%;
     height: 100%;
-    background-color: #FFF;
+    background-color: #F00;
     display: flex;
     flex-direction: column;
     align-items: center;
