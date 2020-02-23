@@ -606,8 +606,9 @@
                     padding: 0px;
                     width: 55px;
                     height: 30px;
-                    background-color: #FFF;
-                    border: 2px solid #AAA;
+                    padding-left: 23px;
+                    background-color: green;
+                    border: 2px solid green;
                     border-radius: 18px;
                     display: flex;
                     align-items: center;
@@ -618,9 +619,9 @@
                     width: 30px;
                     height: 30px;
                     background-color: white;
-                    border: 2px solid #AAA;
+                    border: 2px solid green;
                     border-radius: 50%;
-                    margin-left: -2px;
+                    margin-right: -2px;
                     box-sizing: border-box;
                 }
                 
@@ -801,10 +802,6 @@
                     letter-spacing: 1px;
                     color: #7E7E7E;
                     opacity: 0.4;
-                }
-                
-                #content #open-trades #profile-sections .profile-section:hover {
-                    background-color: #EEE;
                 }
                 
                 #content #open-trades #profile-sections .last {
