@@ -21,7 +21,7 @@ body {
 header {
     height: 56px;
     width: 100%;
-    background: #FFF;
+    background-color: #FFF;
     box-shadow: 0px 10px 27px rgba(161, 184, 227, 0.18);
     z-index: 1;
     display: flex;
@@ -179,6 +179,7 @@ header #header-content #user-notifications #new-identifier {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     box-sizing: border-box;
     margin-bottom: 30px;
     padding: 30px 0px;
@@ -214,8 +215,7 @@ header #header-content #user-notifications #new-identifier {
 
 #content #page-content #gift-card-form {
     width: 100%;
-    height: 100%;
-    background: #FFFFFF;
+    background-color: #FFFFFF;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -233,6 +233,9 @@ header #header-content #user-notifications #new-identifier {
     width: 95%;
     height: 100%;
     background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #content #page-content #gift-card-form form .form-section {
@@ -457,7 +460,7 @@ header #header-content #user-notifications #new-identifier {
     margin-top: 25px;
     width: 500px;
     height: 100%;
-    background: #F7F7F7;
+    background-color: #F7F7F7;
     border-radius: 30px 30px 3px 3px;
     padding-top: 10px;
     display: flex;
