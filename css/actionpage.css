@@ -231,8 +231,7 @@ header #header-content #user-notifications #new-identifier {
 #content #page-content #gift-card-form form {
     margin-top: 25px;
     width: 95%;
-    height: 100%;
-    background-color: #F00;
+    background-color: #FF0;
     display: flex;
     flex-direction: column;
     align-items: center;
