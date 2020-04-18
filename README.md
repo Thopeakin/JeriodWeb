@@ -4,4 +4,4 @@ There is no inline styling any longer and I have seperated the JS to different f
 I have also added comments to the JS files 
 
 # Files
-For the sign in and account creation process, the html files (```bash signup.html```, ```bash signin.html``` and ```bash signin.html```)
+For the sign in and account creation process, the html files (```signup.html```, ```signin.html``` and ```signin.html```)
