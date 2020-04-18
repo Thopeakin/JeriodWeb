@@ -65,7 +65,7 @@
                 
                 #content {
                     width: 40%;
-                    margin-top: 60px;
+                    margin: 60px 0px;
                     background-color: #fff;
                     border-radius: 10px;
                     display: flex;
@@ -225,6 +225,10 @@
                     border-radius: 4px;
                     text-align: center;
                     font-size: 18px;
+                }
+                
+                #content #pin-group .pin-field:focus {
+                    border-color: #1E50CF;
                 }
                 
                 @media (max-width: 1150px) {

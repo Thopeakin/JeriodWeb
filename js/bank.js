@@ -1,38 +1,5 @@
-function selectGiftcard(giftcard) {
-    window.sessionStorage.setItem('giftcard', giftcard);
-    window.location.href = 'giftcarddetails.html';
-}
-
-function tradeType(element) {
-    if (element.id == 'sell-bitcoins') {
-        element.classList.add('type-active');
-        document.getElementById('buy-bitcoins').classList.remove('type-active');
-    } else {
-        element.classList.add('type-active');
-        document.getElementById('sell-bitcoins').classList.remove('type-active');
-    }
-}
-
-function convert() {
-    if (document.getElementById('btc-value').value == '') {
-        document.getElementById('naira-value').innerHTML = "N0";
-    } else {
-        document.getElementById('naira-value').innerHTML = "N" + (parseFloat(document.getElementById('btc-value').value) * 3495690).toLocaleString();
-    }
-    btn = document.getElementById('pri-button');
-    if (parseFloat(document.getElementById('btc-value').value) * 3495690 > 0) {
-        btn.style.opacity = '1';
-        btn.onclick = function() {
-            window.location.href = 'addaccount.html';
-        }
-    } else {
-        btn.style.opacity = '0.4';
-        btn.onclick = '';
-
-    }
-}
-
 function verify() {
+    //DUMMY LOADER TO VERIFY ACCOUNT NUMBER AND NAME
     bank = document.getElementById('bank').value;
     number = document.getElementById('number').value;
     btn = document.getElementById('pri-button');
@@ -51,6 +18,8 @@ function verify() {
 }
 
 function accountNumber(element) {
+    //REGEX TO ENSURE ONLY VALID NUMBERS ARE ENTERED
+    //THEN MAKES BUTTON CLICKABLE WHEN VALID ACCOUNT NUMBER IS INPUTED
     element.value = element.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');
     btn = document.getElementById('pri-button');
     if (element.value.length > 9) {
@@ -65,6 +34,8 @@ function accountNumber(element) {
 }
 
 function pinInput(element, index) {
+    //REGEX TO ENSURE ONLY VALID NUMBERS ARE ENTERED
+    // THEN FOCUS ON THE NEXT FIELD 
     element.value = element.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');
     if (element.value != '') {
         if (index < 3) {
@@ -79,25 +50,5 @@ function pinInput(element, index) {
             btn.focus();
 
         }
-    }
-}
-
-menuBtn = document.getElementById('menu');
-menuBtn.onclick = function() {
-    openMenu();
-}
-
-function openMenu() {
-    modal = document.getElementById('modal');
-    modal.style.display = 'block';
-}
-
-function closeMenu() {
-    modal.style.display = 'none';
-}
-
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = 'none';
     }
 }

@@ -101,25 +101,3 @@ function tradesFilter(element) {
         } catch (err) {}
     }
 }
-
-try {
-    //WHEN YOU USER CLICK'S ON NEW TRADE, A DROPDOWN MENU SHOWS UP
-    // THIS IS TO HIDE THE MENU BY DEFAULT
-    element = document.querySelector('dropdown');
-    element.style.display = 'none';
-} catch (err) {}
-
-function newTrade() {
-    //WHEN YOU USER CLICK'S ON NEW TRADE, A DROPDOWN MENU SHOWS UP
-    // THIS IS TO TOGGLE THE MENU
-    element = document.querySelector('dropdown');
-    if (element.style.display == 'none') {
-        element.style.display = 'block';
-        element.style.animation = 'slideIn 0.3s';
-    } else {
-        element.style.animation = 'slideOut 0.3s';
-        setTimeout(() => {
-            element.style.display = 'none';
-        }, 290);
-    }
-}

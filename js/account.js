@@ -10,12 +10,15 @@ function visibility(element) {
 
 
 function pinInput(element, index) {
+    //REGEX TO ENSURE ONLY VALID NUMBERS ARE ENTERED
+    // THEN FOCUS ON THE NEXT FIELD 
     element.value = element.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');
     if (element.value != '') {
         if (index < 3) {
             document.getElementsByClassName('pin-field')[index + 1].focus();
         } else if (index == 3) {
             document.getElementsByClassName('pin-field')[3].blur();
+            document.getElementById('pri-button').focus();
         }
     }
 }

@@ -32,7 +32,7 @@
                     <h4>Profile</h4>
                 </div>
             </div>
-            <div style="display: flex;align-items: center;">
+            <div id='right-side'>
                 <div id='user-notifications'>
                     <div id='notifications'>
                         <p>Hello, Tope</p>
@@ -52,8 +52,8 @@
         </div>
         <div id='open-trades'>
             <div id='open-trades-content'>
-                <div style='justify-content: center;' id='trades-first-line'>
-                    <div style='margin-bottom: 20px;' id='trades-filter'>
+                <div id='trades-first-line' class='to-center'>
+                    <div id='trades-filter' class='add-margin'>
                         <div class='sec-button filter-active' onclick='tradesFilter(this)' id='filter-giftcards'>Giftcards</div>
                         <div class='sec-button' onclick='tradesFilter(this)' id='filter-bitcoins'>Bitcoins</div>
                     </div>
@@ -96,7 +96,7 @@
     </div>
     <div id='modal'>
         <div id='modal-content'>
-            <i onclick="closeMenu()" class="material-icons" style="font-size: 30px;color: #fff;margin-top: 15px; margin-right: 25px; align-self: flex-end;cursor: pointer;">close</i>
+            <i onclick="closeMenu()" class="material-icons">close</i>
             <div onclick='window.location.href="dashboard.html";' class='menu-section'>
                 <i class='material-icons'>home</i>
                 <h2>Home</h2>
@@ -116,6 +116,7 @@
         </div>
     </div>
 </body>
-<script src="js/dashboard.js"></script>
+<script src="js/rates.js"></script>
+<script src="js/menu.js"></script>
 
 </html>

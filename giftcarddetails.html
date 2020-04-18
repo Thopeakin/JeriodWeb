@@ -32,7 +32,7 @@
                     <h4>Profile</h4>
                 </div>
             </div>
-            <div style="display: flex;align-items: center;">
+            <div id='right-side'>
                 <div id='user-notifications'>
                     <div id='notifications'>
                         <p>Hello, Tope</p>
@@ -101,7 +101,7 @@
     </div>
     <div id='modal'>
         <div id='modal-content'>
-            <i onclick="closeMenu()" class="material-icons" style="font-size: 30px;color: #fff;margin-top: 15px; margin-right: 25px; align-self: flex-end;cursor: pointer;">close</i>
+            <i onclick="closeMenu()" class="material-icons">close</i>
             <div onclick='window.location.href="dashboard.html";' class='menu-section active'>
                 <i class='material-icons'>home</i>
                 <h2>Home</h2>
@@ -121,8 +121,10 @@
         </div>
     </div>
 </body>
-<script src="js/actionpage.js"></script>
+<script src="js/menu.js"></script>
 <script>
+    //FIX THE TEXT FOR VICTORIA'S SECRET
+    // FROM vicssecret TO VICTORI'S SECRET
     giftcard = window.sessionStorage.getItem('giftcard');
     document.getElementById('giftcard-image').src = 'images/' + giftcard + '.png';
     giftcard = (giftcard == 'vicssecret') ? "victoria's secret" : giftcard;

@@ -89,24 +89,29 @@
                     color: #1E50CF;
                 }
                 
-                header #header-content #user-notifications {
+                header #header-content #right-side {
+                    display: flex;
+                    align-items: center;
+                }
+                
+                header #header-content #right-side #user-notifications {
                     display: flex;
                 }
                 
-                header #header-content #user-notifications #notifications {
+                header #header-content #right-side #user-notifications #notifications {
                     width: 100%;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
                 }
                 
-                header #header-content #user-notifications #notifications p {
+                header #header-content #right-side #user-notifications #notifications p {
                     font-size: 16px;
                     line-height: 19px;
                     color: #B6B6B6;
                 }
                 
-                header #header-content #user-notifications #notifications i {
+                header #header-content #right-side #user-notifications #notifications i {
                     width: 35px;
                     height: 35px;
                     background-color: #1E50CF;
@@ -119,7 +124,7 @@
                     cursor: pointer;
                 }
                 
-                header #header-content #user-notifications #new-identifier {
+                header #header-content #right-side #user-notifications #new-identifier {
                     width: 15px;
                     height: 15px;
                     border-radius: 60%;
@@ -234,6 +239,11 @@
                     color: #1E50CF;
                 }
                 
+                dropdown .dropdown-item i {
+                    font-size: 17px;
+                    color: #1E50CF;
+                }
+                
                 @keyframes slideIn {
                     0% {
                         display: block;
@@ -275,6 +285,7 @@
                     background-color: #050D46;
                     border-radius: 10px;
                     box-sizing: border-box;
+                    margin-bottom: 25px;
                 }
                 
                 #content #balance .left {
@@ -377,6 +388,10 @@
                     border-bottom: 1px solid #f9f9f9;
                 }
                 
+                #content #open-trades #open-trades-content .to-center {
+                    justify-content: center !important;
+                }
+                
                 #content #open-trades #open-trades-content #trades-first-line h4 {
                     font-weight: bold;
                     font-size: 21px;
@@ -391,7 +406,12 @@
                     height: 40px;
                     width: 200px;
                     display: flex;
+                    align-self: center;
                     justify-content: space-between;
+                }
+                
+                #content #open-trades #open-trades-content #trades-first-line .add-margin {
+                    margin-bottom: 20px;
                 }
                 
                 #content #open-trades #open-trades-content #trades-first-line #trades-filter .sec-button {
@@ -602,6 +622,10 @@
                     justify-content: flex-start;
                 }
                 
+                #content #open-trades #profile-sections .more {
+                    margin-top: 25px;
+                }
+                
                 #content #open-trades #profile-sections .profile-section #switch-container {
                     margin: 0px;
                     padding: 0px;
@@ -687,7 +711,6 @@
                     width: 100%;
                     border-bottom: 1px solid #E2E2E2;
                     cursor: text;
-                    margin-top: 15px;
                 }
                 
                 #content #open-trades #notification-sections .wallet-section h2 {
@@ -1032,6 +1055,15 @@
                     flex-direction: column;
                     align-items: flex-start;
                     padding-left: 15px;
+                }
+                
+                #modal #modal-content i {
+                    font-size: 30px;
+                    color: #fff;
+                    margin-top: 15px;
+                    margin-right: 25px;
+                    align-self: flex-end;
+                    cursor: pointer;
                 }
                 
                 @keyframes modal-fadeIn {

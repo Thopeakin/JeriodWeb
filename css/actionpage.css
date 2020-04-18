@@ -89,24 +89,29 @@ header #header-content #navbar .active i {
     color: #1E50CF;
 }
 
-header #header-content #user-notifications {
+header #header-content #right-side {
+    display: flex;
+    align-items: center;
+}
+
+header #header-content #right-side #user-notifications {
     display: flex;
 }
 
-header #header-content #user-notifications #notifications {
+header #header-content #right-side #user-notifications #notifications {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header #header-content #user-notifications #notifications p {
+header #header-content #right-side #user-notifications #notifications p {
     font-size: 16px;
     line-height: 19px;
     color: #B6B6B6;
 }
 
-header #header-content #user-notifications #notifications i {
+header #header-content #right-side #user-notifications #notifications i {
     width: 35px;
     height: 35px;
     background-color: #1E50CF;
@@ -119,7 +124,7 @@ header #header-content #user-notifications #notifications i {
     cursor: pointer;
 }
 
-header #header-content #user-notifications #new-identifier {
+header #header-content #right-side #user-notifications #new-identifier {
     width: 15px;
     height: 15px;
     border-radius: 60%;
@@ -292,6 +297,10 @@ header #header-content #user-notifications #new-identifier {
     justify-content: center;
 }
 
+#content #page-content #page-form form .active {
+    opacity: 1 !important;
+}
+
 #content #page-content #gift-card-form #pri-button:hover {
     background-color: #3E70EF;
 }
@@ -308,13 +317,18 @@ header #header-content #user-notifications #new-identifier {
 
 #content #page-content #page-form {
     width: 100%;
-    ;
     margin-top: 25px;
     padding-bottom: 25px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+}
+
+#content #page-content #page-form form img {
+    margin-bottom: 20px;
+    width: 65px;
+    height: 65px;
 }
 
 #content #page-content #page-form #first-line {
@@ -555,6 +569,10 @@ header #header-content #user-notifications #new-identifier {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#content #page-content #page-form form .acc-name {
+    margin-left: 35px;
 }
 
 #content #page-content #page-form form #details-row {
@@ -938,6 +956,15 @@ header #header-content #user-notifications #new-identifier {
     flex-direction: column;
     align-items: flex-start;
     padding-left: 15px;
+}
+
+#modal #modal-content i {
+    font-size: 30px;
+    color: #fff;
+    margin-top: 15px;
+    margin-right: 25px;
+    align-self: flex-end;
+    cursor: pointer;
 }
 
 @keyframes modal-fadeIn {

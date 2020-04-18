@@ -33,7 +33,7 @@
                     <h4>Profile</h4>
                 </div>
             </div>
-            <div style="display: flex;align-items: center;">
+            <div id='right-side'>
                 <div id='user-notifications'>
                     <div id='notifications'>
                         <p>Hello, Tope</p>
@@ -49,7 +49,7 @@
         <div id='first-line'>
             <h3>
             </h3>
-            <div onclick="newTrade()" class='dropdown'>
+            <div class='dropdown'>
                 <h4>Ongoing Trade</h4>
                 <i class='material-icons'>arrow_drop_down</i>
             </div>
@@ -68,7 +68,7 @@
     </div>
     <div id='modal'>
         <div id='modal-content'>
-            <i onclick="closeMenu()" class="material-icons" style="font-size: 30px;color: #fff;margin-top: 15px; margin-right: 25px; align-self: flex-end;cursor: pointer;">close</i>
+            <i onclick="closeMenu()" class="material-icons">close</i>
             <div onclick='window.location.href="dashboard.html";' class='menu-section'>
                 <i class='material-icons'>home</i>
                 <h2>Home</h2>
@@ -88,6 +88,8 @@
         </div>
     </div>
 </body>
-<script src="js/dashboard.js"></script>
+<script src="js/trades.js"></script>
+<script src="js/menu.js"></script>
+
 
 </html>

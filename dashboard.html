@@ -32,7 +32,7 @@
                     <h4>Profile</h4>
                 </div>
             </div>
-            <div style="display: flex;align-items: center;">
+            <div id='right-side'>
                 <div id='user-notifications'>
                     <div id='notifications'>
                         <p>Hello, Tope</p>
@@ -57,12 +57,11 @@
                 <dropdown id='dropdown'>
                     <div onclick='window.location.href="tradegiftcards.html";' class='dropdown-item'>
                         <h4>Giftcards</h4>
-                        <i style='font-size: 17px; color: #1E50CF;' class="material-icons">arrow_forward</i>
+                        <i class="material-icons">arrow_forward</i>
                     </div>
-                    <divider style="width: 170px; height: 2px; background-color: #000; opacity: 0.1"></divider>
                     <div onclick='window.location.href="tradebitcoins.html";' class='dropdown-item'>
                         <h4>Bitcoins</h4>
-                        <i style='font-size: 17px; color: #1E50CF;' class="material-icons">arrow_forward</i>
+                        <i class="material-icons">arrow_forward</i>
                     </div>
                 </dropdown>
             </div>
@@ -71,15 +70,13 @@
             <div class='left'>
                 <h5>WALLET BALANCE</h5>
                 <h1>N27,780</h1>
-                <h4 style="cursor: pointer;" onclick="window.location.href='wallethistory.html';">WALLET HISTORY</h4>
+                <h4 onclick="window.location.href='wallethistory.html';">WALLET HISTORY</h4>
             </div>
             <div class='right'>
                 <div class='fund-button'>WITHDRAW FUNDS</div>
                 <div class='fund-button'>DEPOSIT FUNDS</div>
-
             </div>
         </div>
-        <div style='margin-top: 25px;'></div>
         <div id='open-trades'>
             <div id='open-trades-content'>
                 <div id='trades-first-line'>
@@ -94,7 +91,7 @@
     </div>
     <div id='modal'>
         <div id='modal-content'>
-            <i onclick="closeMenu()" class="material-icons" style="font-size: 30px;color: #fff;margin-top: 15px; margin-right: 25px; align-self: flex-end;cursor: pointer;">close</i>
+            <i onclick="closeMenu()" class="material-icons">close</i>
             <div class='menu-section active'>
                 <i class='material-icons'>home</i>
                 <h2>Home</h2>
@@ -115,5 +112,6 @@
     </div>
 </body>
 <script src="js/dashboard.js"></script>
+<script src="js/menu.js"></script>
 
 </html>

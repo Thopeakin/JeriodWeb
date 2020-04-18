@@ -32,7 +32,7 @@
                     <h4>Profile</h4>
                 </div>
             </div>
-            <div style="display: flex;align-items: center;">
+            <div id='right-side'>
                 <div id='user-notifications'>
                     <div id='notifications'>
                         <p>Hello, Tope</p>
@@ -76,7 +76,7 @@
                         <h5>Enter your PIN to authorize this account</h5>
                         <p>Enter PIN</p>
                         <div id='pin-inputs'>
-                            <input oninput="pinInput(this, 0)" maxlength="1" type='password' class='pin-field'>
+                            <input autofocus='true' oninput="pinInput(this, 0)" maxlength="1" type='password' class='pin-field'>
                             <input oninput="pinInput(this, 1)" maxlength="1" type='password' class='pin-field'>
                             <input oninput="pinInput(this, 2)" maxlength="1" type='password' class='pin-field'>
                             <input oninput="pinInput(this, 3)" maxlength="1" type='password' class='pin-field'>
@@ -88,7 +88,7 @@
         </div>
         <div id='modal'>
             <div id='modal-content'>
-                <i onclick="closeMenu()" class="material-icons" style="font-size: 30px;color: #fff;margin-top: 15px; margin-right: 25px; align-self: flex-end;cursor: pointer;">close</i>
+                <i onclick="closeMenu()" class="material-icons">close</i>
                 <div onclick='window.location.href="dashboard.html";' class='menu-section active'>
                     <i class='material-icons'>home</i>
                     <h2>Home</h2>
@@ -108,9 +108,9 @@
             </div>
         </div>
 </body>
-<script src="js/actionpage.js"></script>
-<script>
-    document.querySelector('.pin-field').focus();
-</script>
+<script src="js/bank.js"></script>
+<script src="js/menu.js"></script>
+
+
 
 </html>
