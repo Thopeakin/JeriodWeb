@@ -279,6 +279,7 @@ header #header-content #right-side #user-notifications #new-identifier {
     padding: 0px 15px;
     font-weight: 500;
     font-size: 16px;
+    background-color: #FFF;
     line-height: 22px;
     color: #000000;
     margin-bottom: 20px;
@@ -510,6 +511,7 @@ header #header-content #right-side #user-notifications #new-identifier {
     padding: 0px 15px;
     font-style: normal;
     font-weight: 500;
+    background-color: #FFF;
     font-size: 16px;
     line-height: 22px;
     color: #000000;

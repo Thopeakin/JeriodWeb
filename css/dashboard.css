@@ -680,6 +680,7 @@
                     font-weight: 600;
                     font-size: 16px;
                     line-height: 22px;
+                    background-color: #FFF;
                     color: #000000;
                     box-sizing: border-box;
                     opacity: 0.9;
@@ -729,6 +730,7 @@
                     padding: 0px 15px;
                     font-style: normal;
                     font-weight: 600;
+                    background-color: #FFF;
                     font-size: 16px;
                     line-height: 22px;
                     color: #000000;
