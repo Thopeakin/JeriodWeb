@@ -136,9 +136,15 @@ header #header-content #right-side #user-notifications #new-identifier {
 
 #content {
     width: 50%;
+    min-width: max-content;
     display: flex;
     flex-direction: column;
     align-self: center;
+    padding: 0px 15px
+}
+
+.giftcards .content {
+    min-width: 670px !important;
 }
 
 #content #first-line {
@@ -190,30 +196,47 @@ header #header-content #right-side #user-notifications #new-identifier {
     padding: 30px 0px;
 }
 
-#content #page-content .giftcard-row {
-    width: 97%;
+#content #page-content .giftcards {
+    width: 100%;
+    max-width: 580px;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     padding: 10px 10px;
     box-sizing: border-box;
     align-self: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #FFF;
 }
 
-#content #page-content .giftcard-row .giftcard {
-    width: 150px;
-    height: 150px;
-    border: 1px solid #ECECEC;
-    box-sizing: border-box;
+#content #page-content .giftcards .giftcard {
+    width: 45%;
+    height: 37vw;
+    max-width: 150px;
+    max-height: 150px;
+    background-color: #FFF;
     border-radius: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 10px 5px;
+    border: 1px solid #ECECEC;
 }
 
-#content #page-content .giftcard-row .giftcard:hover {
+#content #page-content .giftcards .giftcard img {
+    max-width: 95%;
+}
+
+#content #page-content .giftcards .blank {
+    background-color: transparent;
+    border: none;
+    max-height: 0px;
+}
+
+#content #page-content .giftcards .giftcard:hover {
     border: none;
     box-shadow: 0px 10px 10px rgba(0, 115, 247, 0.1);
 }
@@ -243,7 +266,7 @@ header #header-content #right-side #user-notifications #new-identifier {
 }
 
 #content #page-content #gift-card-form form .form-section {
-    width: 650px;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     align-self: center;
@@ -261,6 +284,34 @@ header #header-content #right-side #user-notifications #new-identifier {
     margin-bottom: 20px;
     opacity: 0.9;
     border: 1px solid #C3D3D4;
+}
+
+#content #page-content #gift-card-form form .form-section .file-upload {
+    width: 45%;
+    height: 55px;
+    padding: 0px 15px;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    background-color: #F5F5F5;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    opacity: 0.9;
+    border: 1px solid #C3D3D4;
+}
+
+#content #page-content #gift-card-form form .form-section .file-upload img {
+    padding: 0px;
+    margin: 0px;
+}
+
+#content #page-content #gift-card-form form .form-section .file-upload input[type='file'] {
+    display: none;
 }
 
 #content #page-content #gift-card-form h3 {
@@ -305,8 +356,70 @@ header #header-content #right-side #user-notifications #new-identifier {
     background-color: #3E70EF;
 }
 
+#content #page-content #gift-card-form .duration {
+    width: 95%;
+    max-width: 335px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    color: #051167;
+    background: #E6F3FF;
+    border-radius: 20px;
+    margin: 5px 0px 25px 0px;
+}
+
+#content #page-content #gift-card-form .giftcard-trade-info {
+    width: 95%;
+    max-width: 335px;
+    padding: 10px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #E5E5E5;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+#content #page-content #gift-card-form .giftcard-trade-info .info-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#content #page-content #gift-card-form .giftcard-trade-info .info-item .title {
+    font-weight: 900;
+    font-size: 11.5px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #050C46;
+}
+
+#content #page-content #gift-card-form .giftcard-trade-info .info-item .text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+}
+
+#content #page-content #gift-card-form .giftcard-trade-info .info-item .price {
+    font-weight: bolder;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+}
+
+#content #page-content #gift-card-form .giftcard-trade-info .info-item .status {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #F2691C;
+}
+
 #content #page-content #gift-card-form .note {
-    width: 335px;
+    width: 95%;
+    max-width: 335px;
     font-weight: 500;
     font-size: 12px;
     line-height: 15px;
@@ -471,8 +584,8 @@ header #header-content #right-side #user-notifications #new-identifier {
 
 #content #page-content #page-form form #share {
     margin-top: 25px;
-    width: 500px;
-    ;
+    width: 90%;
+    max-width: 500px;
     background-color: #F7F7F7;
     border-radius: 30px 30px 3px 3px;
     padding-top: 10px;
@@ -729,8 +842,11 @@ header #header-content #right-side #user-notifications #new-identifier {
     header {
         padding: 0px calc((100%-750px) /2);
     }
+}
+
+@media (max-width: 950px) {
     #content {
-        min-width: 90%;
+        min-width: 600px;
     }
 }
 
@@ -750,23 +866,10 @@ header #header-content #right-side #user-notifications #new-identifier {
         display: none;
     }
     #content {
-        min-width: 90%;
-    }
-    #content #page-content #page-form form #share {
-        width: 90%;
-        ;
+        min-width: 90% !important;
     }
     #content #page-content #gift-card-form form .form-section {
         width: 90%;
-    }
-}
-
-@media (max-width:630px) {
-    #content #page-content .giftcard-row .giftcard {
-        width: 25vw;
-        height: 25vw;
-        border-radius: 20px;
-        padding: 15px;
     }
 }
 
@@ -775,7 +878,8 @@ header #header-content #right-side #user-notifications #new-identifier {
         flex-direction: column;
         align-items: center;
     }
-    #content #page-content #gift-card-form form .form-section select {
+    #content #page-content #gift-card-form form .form-section select,
+    #content #page-content #gift-card-form form .form-section .file-upload {
         width: 100%;
     }
 }
@@ -865,6 +969,10 @@ header #header-content #right-side #user-notifications #new-identifier {
 }
 
 @media (max-width: 400px) {
+    #content {
+        min-width: 95% !important;
+        padding: 0px 5px;
+    }
     #content #balance {
         flex-direction: column;
         padding: 3px 0px 10px 0px;
@@ -890,9 +998,6 @@ header #header-content #right-side #user-notifications #new-identifier {
     }
     #content #open-trades #open-trades-content .trades-section {
         padding: 0px;
-    }
-    #content #page-content #gift-card-form .note {
-        width: 80%;
     }
     #content #page-content #page-form form .bank-section h2 {
         font-size: 16px;

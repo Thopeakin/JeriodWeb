@@ -286,6 +286,19 @@
                     border-radius: 10px;
                     box-sizing: border-box;
                     margin-bottom: 25px;
+                    position: relative;
+                }
+                
+                #content #balance img {
+                    position: absolute;
+                    width: 30%;
+                    bottom: 0px;
+                    right: -20px;
+                    min-height: 100%;
+                }
+                
+                #content #balance #oval-two {
+                    right: 25%;
                 }
                 
                 #content #balance .left {
@@ -367,8 +380,9 @@
                     flex-direction: column;
                     background-color: #FFF;
                     border-radius: 10px;
-                    padding-bottom: 50px;
+                    padding: 25px 10px 70px 10px;
                     margin-bottom: 50px;
+                    box-sizing: border-box;
                 }
                 
                 #content #open-trades #open-trades-content {
@@ -380,12 +394,20 @@
                     justify-content: flex-start;
                 }
                 
+                #content #open-trades .add-width {
+                    width: 95% !important;
+                }
+                
                 #content #open-trades #open-trades-content #trades-first-line {
                     display: flex;
                     width: 100%;
                     justify-content: space-between;
                     align-items: center;
                     border-bottom: 1px solid #f9f9f9;
+                }
+                
+                #content #open-trades #open-trades-content .remove-border {
+                    border: none !important;
                 }
                 
                 #content #open-trades #open-trades-content .to-center {
@@ -550,6 +572,142 @@
                     align-items: center;
                 }
                 
+                #content #open-trades #open-trades-content .rates-form {
+                    margin-top: 0px;
+                    width: 100%;
+                    background-color: FFF;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: stretch;
+                    justify-content: space-between;
+                }
+                
+                #content #open-trades #open-trades-content .rates-form .form-column {
+                    margin-top: 25px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 48%;
+                }
+                
+                #content #open-trades #open-trades-content .rates-form .trade-info {
+                    background-color: #F7F7F7;
+                    padding-bottom: 5px;
+                    max-width: 290px;
+                    height: 350px;
+                    padding: 15px;
+                    box-sizing: border-box;
+                    justify-content: space-around;
+                }
+                
+                #content #open-trades #open-trades-content .rates-form .trade-info .div-title {
+                    padding: 15px 0px 10px 5px;
+                    border-bottom: 1px solid #C8D7D8;
+                    width: 90%;
+                    letter-spacing: -0.2px;
+                    text-transform: uppercase;
+                    color: #060D47;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 16px;
+                }
+                
+                #content #open-trades #open-trades-content .rates-form .trade-info .trade-items {
+                    width: 90%;
+                }
+                
+                #content #open-trades #open-trades-content .rates-form .trade-info .trade-item {
+                    margin: 10px 0px;
+                    width: 100%;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    color: #000000;
+                }
+                
+                #content #open-trades #open-trades-content .rates-form .trade-info .total-payout {
+                    width: 90%;
+                    padding: 15px 0px 10px 5px;
+                    border-bottom: 1px solid #C8D7D8;
+                    border-top: 1px solid #C8D7D8;
+                    display: flex;
+                    flex-direction: column;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 12px;
+                    letter-spacing: -0.2px;
+                    text-transform: uppercase;
+                    color: #060D47;
+                }
+                
+                #content #open-trades #open-trades-content .rates-form .trade-info .total-payout .price {
+                    font-weight: bold;
+                    font-size: 18px;
+                    display: flex;
+                    align-items: center;
+                    letter-spacing: -0.2px;
+                    text-transform: uppercase;
+                    color: #060D47;
+                    margin: 7px 0px;
+                }
+                
+                #content #open-trades #open-trades-content .rates-form .trade-info .total-rate {
+                    width: 90%;
+                    display: flex;
+                    font-weight: 500;
+                    font-size: 13px;
+                    color: #000000;
+                }
+                
+                #content #open-trades #open-trades-content .rates-form .trade-info .total-rate .rate-price {
+                    font-weight: 900;
+                    font-size: 15px;
+                    display: flex;
+                    align-items: center;
+                    letter-spacing: -0.2px;
+                    margin-left: 5px;
+                    text-transform: uppercase;
+                    color: #060D47;
+                }
+                
+                #content #open-trades #open-trades-content .rates-form .form-column select,
+                #content #open-trades #open-trades-content .rates-form .form-column input[type='number'] {
+                    width: 100%;
+                    max-width: 290px;
+                    height: 53px;
+                    padding: 0px 15px;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: #000000;
+                    box-sizing: border-box;
+                    opacity: 0.9;
+                    border: 1px solid #C3D3D4;
+                    margin-bottom: 15px;
+                    border-radius: 4px;
+                }
+                
+                #content #open-trades #open-trades-content .rates-form .form-column #pri-button {
+                    width: 100%;
+                    max-width: 290px;
+                    height: 53px;
+                    padding: 0px 15px;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: #FFF;
+                    box-sizing: border-box;
+                    margin-top: 25px;
+                    display: flex;
+                    justify-content: center;
+                    cursor: pointer;
+                    align-items: center;
+                    border-radius: 4px;
+                    background-color: #1E50CF;
+                }
+                
                 #content #open-trades #open-trades-content form #giftcard-section {
                     display: flex;
                     flex-direction: column;
@@ -570,7 +728,7 @@
                     height: 55px;
                     padding: 0px 15px;
                     font-style: normal;
-                    font-weight: 500;
+                    font-weight: 600;
                     font-size: 16px;
                     line-height: 22px;
                     color: #000000;
@@ -578,6 +736,26 @@
                     opacity: 0.9;
                     border: 1px solid #C3D3D4;
                     margin-bottom: 15px;
+                    border-radius: 4px;
+                }
+                
+                #content #open-trades #open-trades-content form #pri-button {
+                    width: 300px;
+                    height: 55px;
+                    padding: 0px 15px;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: #FFF;
+                    box-sizing: border-box;
+                    margin-top: 25px;
+                    display: flex;
+                    justify-content: center;
+                    cursor: pointer;
+                    align-items: center;
+                    border-radius: 4px;
+                    background-color: #1E50CF;
                 }
                 
                 #content #open-trades #open-trades-content form h3 {
@@ -875,6 +1053,17 @@
                     }
                 }
                 
+                @media(max-width: 700px) {
+                    #content #open-trades #open-trades-content .rates-form {
+                        align-items: center;
+                        flex-direction: column;
+                    }
+                    #content #open-trades #open-trades-content .rates-form .form-column {
+                        width: 100%;
+                        margin-bottom: 30px;
+                    }
+                }
+                
                 @media (max-width: 540px) {
                     #content {
                         min-width: 90%;
@@ -911,6 +1100,9 @@
                     dropdown .dropdown-item h4 {
                         font-size: 13px;
                         line-height: 12px;
+                    }
+                    #content #balance img {
+                        display: none;
                     }
                     #content #balance .left h1 {
                         font-size: 25px;

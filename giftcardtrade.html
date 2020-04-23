@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeriod</title>
+    <link rel="stylesheet" href="css/actionpage.css">
+</head>
+
+<body>
+    <header>
+        <div id='header-content'>
+            <h2>Logo</h2>
+            <div id='navbar'>
+                <div class='nav-section active'>
+                    <i class='material-icons'>home</i>
+                    <h4>Home</h4>
+                </div>
+                <div onclick="window.location.href ='trades.html';" class='nav-section'>
+                    <i class='material-icons'>assignment</i>
+                    <h4>Trades</h4>
+                </div>
+                <div onclick="window.location.href ='rates.html';" class='nav-section'>
+                    <i class='material-icons'>autorenew</i>
+                    <h4>Rates</h4>
+                </div>
+                <div onclick="window.location.href ='profile.html';" class='nav-section'>
+                    <i class='material-icons'>person</i>
+                    <h4>Profile</h4>
+                </div>
+            </div>
+            <div id='right-side'>
+                <div id='user-notifications'>
+                    <div id='notifications'>
+                        <p>Hello, Tope</p>
+                        <i onclick='window.location.href="notifications.html";' class='material-icons'>notifications</i>
+                    </div>
+                    <div id='new-identifier'></div>
+                </div>
+                <i class='material-icons' id='menu'>menu</i>
+            </div>
+        </div>
+    </header>
+    <div id='content'>
+        <div id='first-line'>
+            <div id='back-button' onclick='window.history.back();'>
+                <i class='material-icons'>arrow_back</i>
+                <h4>Back</h4>
+            </div>
+            <div id='page-title'>
+                Giftcard Trade
+            </div>
+        </div>
+        <div id='page-content'>
+            <div id='gift-card-form'>
+                <img id='giftcard-image' src='' width="initial-scale" height="initial-scale">
+                <div class='duration'>
+                    Average confirmation time: 10 - 30 mins
+                </div>
+                <div class='giftcard-trade-info'>
+                    <div class='info-item'>
+                        <div class='title'>
+                            Card Type
+                        </div>
+                        <div class='text' id='card-type'>
+                            Amazon Card
+                        </div>
+                    </div>
+                    <div class='info-item'>
+                        <div class='title'>
+                            Card Currency
+                        </div>
+                        <div class='text'>
+                            US Dollars
+                        </div>
+                    </div>
+                </div>
+                <div class='giftcard-trade-info'>
+                    <div class='info-item'>
+                        <div class='title'>
+                            Card Value
+                        </div>
+                        <div class='text'>
+                            $500
+                        </div>
+                    </div>
+                    <div class='info-item'>
+                        <div class='title'>
+                            Transactional Value
+                        </div>
+                        <div class='price'>
+                            N80,000
+                        </div>
+                    </div>
+                </div>
+                <div class='giftcard-trade-info'>
+                    <div class='info-item'>
+                        <div class='title'>
+                            Rate
+                        </div>
+                        <div class='text'>
+                            230/$
+                        </div>
+                    </div>
+                    <div class='info-item'>
+                        <div class='title'>
+                            Time of Upload
+                        </div>
+                        <div class='text'>
+                            7:53PM
+                        </div>
+                    </div>
+                </div>
+                <div class='giftcard-trade-info'>
+                    <div class='info-item'>
+                        <div class='title'>
+                            Date
+                        </div>
+                        <div class='text'>
+                            Apr 23, 2020
+                        </div>
+                    </div>
+                    <div class='info-item'>
+                        <div class='title'>
+                            Status
+                        </div>
+                        <div class='status'>
+                            Pending
+                        </div>
+                    </div>
+                </div>
+                <div class='note'>
+                    <p><b>Note:</b> GiftCard uploaded on a wrong channel will be transferred to the appropriate channel and treated at the current rate in that channel.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id='modal'>
+        <div id='modal-content'>
+            <i onclick="closeMenu()" class="material-icons">close</i>
+            <div onclick='window.location.href="dashboard.html";' class='menu-section active'>
+                <i class='material-icons'>home</i>
+                <h2>Home</h2>
+            </div>
+            <div onclick='window.location.href="trades.html";' class='menu-section'>
+                <i class='material-icons'>assignment</i>
+                <h2>Trades</h2>
+            </div>
+            <div onclick='window.location.href="rates.html";' class='menu-section'>
+                <i class='material-icons'>autorenew</i>
+                <h2>Rates</h2>
+            </div>
+            <div onclick='window.location.href="profile.html";' class='menu-section'>
+                <i class='material-icons'>person</i>
+                <h2>Profile</h2>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/menu.js"></script>
+<script>
+    // SHOW SELECTED GIFTCARD PICTURE
+    //AND SET GIFTCARD TYPE
+
+    function capitalizeFirstLetter(string) {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+    }
+    giftcard = window.sessionStorage.getItem('giftcard');
+    document.getElementById('giftcard-image').src = 'images/' + giftcard + '.png';
+    giftcard = giftcard + ' Card';
+    document.getElementById('card-type').innerHTML = capitalizeFirstLetter(giftcard);
+</script>
+
+
+
+
+</html>
